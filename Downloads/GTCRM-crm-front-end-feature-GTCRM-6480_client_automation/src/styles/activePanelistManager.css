@@ -1,0 +1,652 @@
+.active-panelist-manager-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.active-panelist-manager-profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.active-panelist-manager-text-notification {
+  width: 13px;
+  height: 13px;
+  font-size: 10px;
+  background-color: #e06259;
+  color: white;
+  margin-top: 3px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.active-panelist-manager-photo-box-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.active-panelist-manager-slot-planner-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #231f20;
+  white-space: nowrap;
+}
+.active-panelist-manager-header-box {
+  background-color: #11bed2;
+  margin: 40px;
+  border-radius: 10px;
+}
+.active-panelist-manager-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.active-panelist-manager-value {
+  font-size: 42px;
+  font-size: 700 !important;
+  color: white;
+}
+.active-panelist-manager-header-text-box {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.active-panelist-manager-box-grid {
+  display: flex;
+  justify-content: space-between;
+  gap:100px;
+  
+  
+}
+.button-design-manage-panel-slots {
+  color: white;
+  border: 1px solid white;
+}
+.button-design-manage-panel-slots-create-list {
+  color: white;
+  border: 1px solid white;
+}
+.active-button-box-container {
+  display: grid;
+  place-items: end;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.active-list-data-container {
+  margin: 40px;
+}
+.active-panelist-table-container {
+  padding: 30px;
+}
+.active-panelist-box-design {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:3px;
+}
+.select-picker-box-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button-design-manage-panel-slots-download {
+  border: 1px solid #a8c9e5;
+}
+.active-panelist-box-user-profile {
+  border-radius: 8px;
+  background: #008ce0;
+  height: auto;
+  margin-top: 80px;
+}
+.box-container-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.active-panelist-box-design-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+}
+.active-panelist-school-text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #008CE0;
+    gap: 5px;
+}
+.active-panelist-info-data-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:3px;
+    margin-top: 15px;
+}
+.MOD-action-container {
+    position: relative;
+    width: 100%;
+    z-index: 20;
+  }
+  .MOD-action-wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: red;
+  }
+  .MOD-action-card {
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 8%;
+  }
+  .MOD-action-content-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 14px;
+  }
+  .MOD-action-content {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+  }
+  .active-panelist-button-box-search{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .divider-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    color: #0080C9;
+  }
+  .active-button-panelist-manager{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .department-table-col-padding{
+    padding-left: 80px;
+  }
+  .addIcon-size{
+    display: none;
+  }
+  .email-text-container{
+    display: none;
+  }
+  .email-text-container-large-screen{
+    display: none;
+  }
+  @media (min-width: 350px) and (max-width: 700px) {
+    .active-manager-card-container{
+      margin: 20px;
+    }
+    .active-panelist-box-design-text{
+      display: none;
+    }
+      }
+  @media (min-width: 350px) and (max-width: 374px) {
+    .active-panelist-manager-header-box {
+      height: auto;
+      background-color: #11bed2;
+      margin: 40px;
+      border-radius: 10px;
+    }
+    .active-panelist-box-design-text{
+      display: none;
+  }
+    .active-panelist-manager-header-text-box {
+    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
+    }
+    /* .box-phone-container{
+      display: none;
+    } */
+    .divider-box-container{
+      display: none;
+    }
+    .active-panelist-button-box-search{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 25px;
+    }
+    .manage-panel-slot-button-box{
+      display: grid;
+      place-items: center;
+      margin-left: 30px;
+    }
+    .active-panelist-box-design {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap:3px;
+      
+    }
+    .select-picker-box-container {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      margin-top: 5px;
+    }
+    .profile-photo{
+      width: 60px;
+    }
+    .profile-image-box{
+      margin-top: 130px;
+    }
+    .active-panelist-info-data-text{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .active-panelist-box-user-profile {
+      border-radius: 8px;
+      background: #008ce0;
+      height: auto;
+      margin-top: 10px;
+  }
+  .active-info-panelist-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .active-panelist-manager-box-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .active-panelist-manager-profile-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .active-button-box-container{
+    display: grid;
+    place-items: center;
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-top: -68px;
+    padding-bottom: 20px;
+  }
+  .panelist-info-data-box-container{
+    padding: 8px;
+  }
+  
+  }
+  @media (min-width: 350px) and (max-width: 450px) {
+    /* .mail-icon{
+      display: none;
+    } */
+    .email-text-container{
+      display: block;
+    }
+    .Panelist-name-text{
+      font-size: 16px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-top: 3px;
+    }
+    .email-text-container-large-screen{
+      display: none;
+    }
+    
+  }
+ 
+  @media (min-width: 451px) and (max-width: 4500px) {
+    .email-text-container-large-screen{
+      display: block;
+    }
+  }
+  
+  @media (min-width: 375px) and (max-width: 550px) {
+    .active-panelist-manager-header-box {
+      height: auto;
+      background-color: #11bed2;
+      margin: 40px;
+      border-radius: 10px;
+    }
+    .active-panelist-box-design-text{
+      display: none;
+  }
+    .active-panelist-manager-header-text-box {
+    
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0px;
+    }
+    .active-panelist-box-design {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap:3px;
+      
+    }
+    .select-picker-box-container {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      margin-top: 5px;
+    }
+    .profile-photo{
+      width: 60px;
+    }
+    .profile-image-box{
+      margin-top: 130px;
+    }
+    .box-phone-container{
+      display: none;
+    }
+    .active-panelist-info-data-text{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .active-panelist-box-user-profile {
+      border-radius: 8px;
+      background: #008ce0;
+      height: auto;
+      margin-top: 10px;
+  }
+  .active-panelist-manager-box-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .active-panelist-manager-profile-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .active-button-box-container{
+    display: grid;
+    place-items: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    margin-top: -80px;
+    padding-bottom: 20px;
+  }
+  .active-panelist-button-box-search {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.panelist-info-data-box-container{
+ padding: 8px;
+}
+
+  }
+  @media (min-width: 551px) and (max-width: 700px) {
+    .panelist-info-data-box-container{
+      padding: 8px;
+    }
+    .Panelist-name-text{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+@media (min-width: 400px) and (max-width: 700px) {
+  .active-panelist-manager-header-box {
+    height: auto;
+    background-color: #11bed2;
+    margin: 40px;
+    border-radius: 10px;
+  }
+  .active-panelist-box-design-text{
+    display: none;
+}
+  .active-panelist-manager-header-text-box {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+  }
+  .active-button-box-container {
+    display: grid;
+    place-items: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  .active-panelist-manager-box-grid-last{
+    margin-right: 103px;
+  }
+  .active-panelist-manager-slot-planner-text{
+    font-size: 13px;
+    margin-right: 2px;
+  }
+  .select-picker-box-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  .active-panelist-box-design {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:3px;
+    
+  }
+}
+@media (min-width: 375px) and (max-width: 850px) {
+  .divider-box-container{
+   display: none;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .profile-photo{
+    width: 60px;
+  }
+  .profile-image-box{
+    margin-top: 125px;
+  }
+  .active-panelist-info-data-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:3px;
+    margin-top: 15px;
+}
+.active-panelist-box-user-profile {
+  border-radius: 8px;
+  background: #008ce0;
+  height: auto;
+  margin-top: 5px;
+}
+
+}
+@media (min-width: 851px) and (max-width: 1000px) {
+.divider-end{
+  display: none;
+}
+}
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .active-panelist-box-design-text{
+    display: none;
+  }
+  .panelist-info-data-box-container{
+    display: block;
+    padding: 8px;
+  }
+  .active-panelist-box-user-profile {
+    border-radius: 8px;
+    background: #008ce0;
+    height: auto;
+    margin-top: 80px;
+}
+.Panelist-name-text{
+  padding-top: 90px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.panelist-email-width-container{
+  min-width: 270px;
+  overflow-wrap: break-word;
+}
+}
+
+@media (min-width: 701px) and (max-width: 999px) {
+  .active-panelist-manager-header-box {
+    background-color: #11bed2;
+    margin: 40px;
+    border-radius: 10px;
+  }
+  .active-panelist-manager-header-text-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    height: 340px;
+  }
+  .active-button-box-container {
+    display: grid;
+    place-items: center;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  .active-panelist-manager-box-grid-last{
+    margin-right: 103px;
+  }
+  .button-design-manage-panel-slots-create-list{
+    color: white;
+  border: 1px solid white;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  }
+  /* .divider-available-slot{
+    display: none;
+  } */
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  .active-button-box-container{
+    margin-left: 150px;
+    margin-top: -175px;
+  }
+  .button-design-manage-panel-slots-create-list{
+    color: white;
+  border: 1px solid white;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  }
+  .active-panelist-manager-header-text-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    height: 340px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .active-panelist-manager-box-grid {
+    display: flex;
+    justify-content: space-between;
+    gap:60px
+  }
+  .button-design-manage-panel-slots-create-panelist{
+    font-size: 10px;
+  }
+  .select-picker-field{
+    width: 95px !important;
+  }
+  .box-container-flex{
+    width: 50px !important;
+  }
+  .button-design-manage-panel-slots-create-list{
+    color: white;
+  border: 1px solid white;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .active-panelist-manager-box-grid {
+    display: flex;
+    justify-content: space-between;
+    gap:70px
+  }
+  .button-design-manage-panel-slots-create-list{
+    color: white;
+  border: 1px solid white;
+  font-size: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  }
+  
+  
+
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+  /* .profile-photo{
+    width: 100px;
+  } */
+  .profile-image-box{
+    margin-top: 156px;
+  }
+}
+/* @media (min-width: 1400px) and (max-width: 3200px) {
+  .department-table-col-padding{
+    padding-left: 200px;
+  }
+} */
+@media (min-width: 701px) and (max-width: 999px) {
+.panelist-info-data-box-container{
+  display: none;
+}
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+
+.panelist-email-width-container{
+  min-width: 270px;
+  overflow-wrap: break-word;
+}
+}
+@media (min-width: 1501px) and (max-width: 4500px) {
+  .panelist-info-data-box-container{
+    display: none;
+  }
+}
+.active-panelists-header-box-container{
+  margin-top: 50px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+  .active-panelists-header-box-container{
+   margin-top: 50px;
+  }
+ }
+ @media (min-width: 601px) and (max-width: 900px) {
+  .active-panelists-header-box-container{
+    margin-top: 180px;
+  }
+
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .active-panelists-header-box-container{
+   margin-top: 100px;
+  }
+ }

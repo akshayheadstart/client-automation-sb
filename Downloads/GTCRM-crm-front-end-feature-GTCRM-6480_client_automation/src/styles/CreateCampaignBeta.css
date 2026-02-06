@@ -1,0 +1,17 @@
+.select-picker{
+    width: 200px;
+    margin: 10px 10px 10px 0px !important;
+}
+.campaign-filter{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.campaign-filter .rs-picker-toggle-wrapper{
+    width: 160px !important
+}
+.error-animation-box{
+    display: flex;
+    justify-content: center;
+    min-height: 55vh;
+    align-items: center;
+}

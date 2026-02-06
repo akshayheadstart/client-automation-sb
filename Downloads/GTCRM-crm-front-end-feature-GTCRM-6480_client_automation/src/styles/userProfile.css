@@ -1,0 +1,288 @@
+#user-profile-top-arrow-button {
+  border: 1px solid rgb(211, 205, 205);
+  color: rgb(94, 93, 93);
+  width: 40px;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.user-profile-sidebar-icon:hover {
+  border-radius: 50% !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer !important;
+}
+
+#user-application-all-stages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #008ce00d;
+  justify-content: space-between;
+  gap: 5px;
+  height: 35px;
+  position: relative;
+  white-space: nowrap;
+}
+.all-stages-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.individual-step-container {
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+.step-progress-overlay {
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  background-image: linear-gradient(to right, #53c3d5, #007ecc);
+}
+.followup-details-container .rs-timeline-item-tail {
+  background-color: #008ce0;
+  width: 1px;
+}
+.followup-details-container .rs-timeline-item {
+  padding-left: 2.5rem;
+}
+.followup-and-note-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #008ce0;
+}
+.followup-custom-dot {
+  position: relative;
+}
+.followup-custom-dot div:first-child {
+  width: 10px;
+  position: absolute;
+  left: 5px;
+  top: 75px;
+  height: 1px;
+  background: #008ce0;
+}
+.followup-custom-dot div:last-child {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #008ce0;
+  position: absolute;
+  top: 71px;
+  left: 15px;
+}
+.note-section-container .note-card p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.followup-status-update-tooltip {
+  font-size: 12px;
+  color: #008ce0;
+}
+.followup-details-card svg {
+  font-size: 16px;
+}
+.note-section-container .note-card p span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.followup-details-card p:not(:first-child) {
+  font-weight: 400;
+  font-size: 12px;
+}
+.followup-details-card p:first-child {
+  margin-bottom: 0px;
+}
+.followup-details-container
+  .rs-timeline-endless
+  .rs-timeline-item:last-child
+  .rs-timeline-item-tail {
+  min-height: 70%;
+}
+.note-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.note-section-container .note-card {
+  border-radius: 8px;
+  color: white;
+  padding: 10px 16px;
+  position: relative;
+  overflow: hidden;
+}
+.note-section-container .note-card.user {
+  background-color: #008ce0;
+}
+.note-section-container .note-card.system {
+  background-color: #00588f;
+}
+.note-section-container .note-card.counselor {
+  background-color: #11bed2;
+}
+
+.shape-inner {
+  width: 215px !important;
+  background-color: #d6faff;
+  margin: auto !important;
+  padding-inline: 20px !important;
+  padding-block: 10px !important;
+}
+
+@media only screen and (max-width: 1310px) and (min-width: 1200px) {
+  .shape-inner {
+    width: 100% !important;
+  }
+
+  .user-application-stages-enrollment-section {
+    width: 100% !important;
+  }
+
+  .user-application-stages-application-section {
+    width: 100% !important;
+  }
+}
+
+.sign-right {
+  -webkit-clip-path: polygon(
+    0% 0%,
+    90% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%
+  ) !important;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%) !important;
+  border-radius: 12px !important;
+}
+
+.chevron-right {
+  -webkit-clip-path: polygon(
+    90% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%,
+    10% 50%,
+    0% 0%
+  ) !important;
+  clip-path: polygon(
+    90% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%,
+    10% 50%,
+    0% 0%
+  ) !important;
+}
+
+.shape-outer {
+  margin-right: -15px !important;
+}
+
+.user-profile-application-stages-span-notification {
+  border-radius: 50% !important;
+  background-color: #e06259;
+  padding-inline: 4px !important;
+  color: white !important;
+  margin-left: 5px !important;
+}
+
+.user-profile-application-stages-span-notification-grey {
+  border-radius: 50% !important;
+  background-color: rgb(179, 177, 177) !important;
+  padding-inline: 5px !important;
+  color: rgb(226, 219, 219) !important;
+  margin-left: 5px !important;
+}
+
+#user-application-stages-payment {
+  background-color: #bff5fd !important;
+}
+
+.user-application-stages-application-section {
+  width: 210px !important;
+  margin: auto !important;
+  padding-inline: 20px !important;
+  padding-block: 10px !important;
+}
+
+.user-application-stages-enrollment-section {
+  background-color: rgb(221, 218, 218) !important;
+  color: rgb(168, 165, 165);
+  width: 200px !important;
+  margin: auto !important;
+  padding-inline: 20px !important;
+  padding-block: 10px !important;
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+  .lead-manager-box-container-margin {
+    margin-left: 0px;
+  }
+}
+.user-Profile-box-container {
+  margin-top: 30px;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .user-Profile-box-container {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .user-Profile-box-container {
+    margin-top: 180px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .user-Profile-box-container {
+    margin-top: 100px;
+  }
+}
+.user-profile-back-button {
+  background-color: white !important;
+  height: 22px !important;
+  font-size: 13px;
+  width: 30px !important;
+  border-radius: 5px !important;
+}
+.user-profile-back-next-button-box {
+  display: grid;
+  place-items: end;
+}
+.faq-mini-dialog-box {
+  width: 350px;
+  border-radius: 8px;
+  background: #fefefe;
+  box-shadow: -6px -6px 12px 0px rgba(184, 184, 184, 0.25);
+  padding: 8px;
+  position: fixed;
+  right: 50px;
+  bottom: 0px;
+  z-index: 111;
+}
+.faq-mini-text-headline {
+  color: #121828;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .faq-mini-dialog-box {
+    width: 350px;
+    border-radius: 8px;
+    background: #fefefe;
+    box-shadow: -6px -6px 12px 0px rgba(184, 184, 184, 0.25);
+    padding: 8px;
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    z-index: 111;
+  }
+}

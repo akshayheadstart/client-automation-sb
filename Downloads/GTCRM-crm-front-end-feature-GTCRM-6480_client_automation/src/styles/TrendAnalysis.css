@@ -1,0 +1,33 @@
+/*====================================================
+ Trend Analysi CSS
+====================================================*/
+
+/* START OF SEARCH BOX CSS */
+.searchFormWrapper {
+  background: #fff;
+  padding: 30px;
+}
+.searchFormWrapper .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.searchFormWrapper h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+.searchFormWrapper .MuiFormControl-root label {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.searchFormWrapper .checkboxLabel span {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.searchFormWrapper .headingWrapper {
+  display: flex;
+}
+/* END OF SEARCH BOX CSS */

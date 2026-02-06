@@ -1,0 +1,134 @@
+.telephony-dialog-header {
+  background: url("../images/telephony-dialog-bg.png"),
+    lightgray -9.346px -9.859px / 156.797% 100% no-repeat;
+  padding: 1rem;
+  background-size: cover;
+  cursor: move;
+}
+.telephony-dialog-container > div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+.telephony-minimize-icon {
+  text-align: right;
+  color: white;
+}
+.telephony-minimize-icon svg {
+  cursor: pointer;
+}
+.telephony-dialog-heder-content {
+  padding: 0.8rem 0 2.2rem 0;
+  text-align: center;
+  color: white;
+}
+.telephony-dialog-heder-content > p:first-child {
+  font-size: 32px;
+  font-weight: 400;
+}
+.telephony-dialog-heder-content > p {
+  font-size: 21px;
+}
+.telephony-call-status-with-second {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 1.2rem 0;
+  padding: 13px 20px;
+}
+.telephony-call-status-with-second > p {
+  font-size: 19px;
+  font-weight: 500;
+}
+.telephony-call-type-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.telephony-call-type-container > p {
+  font-size: 21px;
+}
+.telephony-search-applicant-container {
+  padding: 2rem 2.5rem;
+}
+.telephony-create-lead-btn {
+  border-radius: 100px !important;
+  background: #008be2 !important;
+  font-size: 1rem !important;
+  color: white !important;
+  font-weight: 400 !important;
+}
+.telephony-action-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.telephony-minimized-chip {
+  position: relative;
+  display: inline-flex;
+  z-index: 100;
+  white-space: nowrap;
+  right: 316px;
+}
+.telephony-minimized-chip > div:first-child {
+  background-color: #008ce0;
+  color: white;
+  padding: 1rem;
+  cursor: move;
+  border-radius: 8px 0px 0px 8px;
+}
+.telephony-minimized-chip > div:last-child {
+  background-color: white;
+  color: #008ce0;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0px 8px 8px 0px;
+}
+.telephony-minimized-chip > div:first-child > p:last-child {
+  font-weight: 600;
+}
+
+.telephony-minimized-chip > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.telephony-minimized-chip > div:last-child p {
+  font-weight: 600;
+}
+.telephony-draggable-container {
+  position: relative;
+}
+.telephony-draggable-container > div {
+  position: absolute;
+  height: 85vh;
+  top: 0;
+  right: 0;
+}
+.telephony-draggable-container > div > div {
+  position: relative;
+  height: 100%;
+}
+.telephony-draggable-container > div > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  position: absolute;
+  right: -300px;
+  bottom: 0;
+}
+.telephony-select-application {
+  color: #092c4c;
+}
+.telephony-select-option {
+  font-size: 14px !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}

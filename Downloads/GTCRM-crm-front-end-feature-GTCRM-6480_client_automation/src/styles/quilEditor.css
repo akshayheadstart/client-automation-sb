@@ -1,0 +1,14 @@
+.ql-toolbar.ql-snow{
+    border-top-left-radius: 0.5em !important;
+  border-top-right-radius: 0.5em !important;
+  border: 1px solid hsl(0, 11%, 93%);
+}
+.editor-text-area{
+    min-height: 200px !important;
+    border-Bottom-left-radius: 0.5em !important;
+  border-Bottom-right-radius: 0.5em !important;
+  border: 1px solid hsl(0, 11%, 93%) !important;
+}
+.editor-text-area:hover{
+    border: 2px solid #d3d3d4 !important;
+}

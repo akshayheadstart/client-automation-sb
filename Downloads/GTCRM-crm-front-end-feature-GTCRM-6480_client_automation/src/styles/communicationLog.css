@@ -1,0 +1,137 @@
+/* new design styles */
+.communication-logs-tab-box {
+  display: flex;
+  padding: 21px 30px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 15px 15px;
+}
+.communication-logs-single-tab {
+  display: flex;
+  width: 139px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #008be2;
+  cursor: pointer;
+}
+.communication-logs-single-tab-active {
+  display: flex;
+  width: 139px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #008be2;
+  cursor: pointer;
+  background: #008be2;
+  color: #fff;
+}
+.arrow-icon {
+  width: 17.441px;
+  height: 17.439px;
+  flex-shrink: 0;
+  color: #008ce1;
+  background: #cceeff;
+  border-radius: 50%;
+}
+
+.arrow-icon-active {
+  width: 17.441px;
+  height: 17.439px;
+  flex-shrink: 0;
+  color: #008ce1;
+  background: #fff;
+  border-radius: 50%;
+  rotate: 90deg;
+}
+.communication-logs-tab-name {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+.communication-logs-data-box {
+  border-radius: 20px;
+  background: #fff;
+  margin: 15px;
+  padding: 0px 30px;
+  position: relative;
+}
+.communication-logs-data-content-inside {
+  display: flex;
+  flex-direction: row;
+}
+.communication-logs-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center !important;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+.communication-logs-list-wrapper-sms {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center !important;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  padding-left: 37px;
+}
+
+.communication-logs-list-vertical-line {
+  background: rgba(0, 139, 226, 0.3);
+  height: 80px;
+  width: 1px;
+}
+.communication-logs-filter-box {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+  padding: 0px 15px 0px 0px;
+}
+.communication-logs-data-title-design {
+  font-size: 19px;
+  color: #a19f9f;
+  font-weight: 400;
+}
+.communication-log-title {
+  color: #092c4c;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.communication-log-sec-text {
+  color: #333;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 1004px) {
+  .communication-logs-list-vertical-line {
+    display: none;
+  }
+}
+.communication-logs-tab-box-shadow{
+   box-shadow: 15px 7px 30px 0px rgba(228, 228, 228, 0.5);
+  ;
+    border-radius: 20px;
+}

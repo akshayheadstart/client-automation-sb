@@ -1,0 +1,73 @@
+#followup-note-tab-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#followup-note-tab-action-and-filter {
+  display: flex;
+  align-items: center;
+}
+#followup-note-tab-filter-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: rgb(75, 73, 73);
+  width: 110%;
+}
+#followup-note-tab-filter-icon:hover {
+  border-radius: 50% !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer !important;
+  width: 120%;
+  color: black;
+}
+#followup-and-note-button-icon {
+  border: none;
+  margin-left: -5px;
+}
+.followup-details-container .rs-timeline-item-tail {
+  display: block !important;
+}
+.followup-and-note-button {
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+}
+.lead-stage-arrow-icon {
+  display: none;
+}
+.note-folding-container > svg {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 28.596px;
+  height: 18.079px;
+}
+.add-followup-note {
+  border-radius: 8px;
+  border: 1px solid #a8c9e5;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 3px 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  #user-application-all-stages {
+    width: 650px;
+  }
+  .lead-stage-arrow-icon {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: 7%;
+  }
+  .lead-stage-arrow-icon.arrow-left {
+    left: 0;
+  }
+  .lead-stage-arrow-icon.arrow-right {
+    right: 0px;
+  }
+  .lead-stage-arrow-icon svg {
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: #004a77;
+  }
+}

@@ -1,0 +1,44 @@
+.input-box-container{
+    display: flex;
+    align-items: flex-start;
+    gap:10px;
+    margin-bottom: 15px;
+
+}
+.header-box-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 25px; */
+    padding-bottom:20px ;
+}
+.create-text-data{
+    font-size: 20px;
+    font-weight: 800;
+}
+.button-box-container{
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+}
+.school-select-picker > .rs-picker-default > .rs-picker-toggle{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+.school-select-picker >.rs-picker-check-menu-items {
+    max-height: 140px !important;
+}
+.school-select-picker .rs-stack-item > svg{
+    top: 15px !important;
+}
+.school-select-picker .rs-stack-item > .rs-picker-toggle-clean svg{
+    margin-top: 15px !important;
+}
+.school-select-picker >.rs-picker-menu >.rs-picker-check-menu{
+    height: 300px !important;
+}
+@media (min-width: 350px) and (max-width: 1000px) {
+.header-box-container{
+    margin-top: 60px;
+}
+}

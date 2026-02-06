@@ -1,0 +1,163 @@
+.student-queries-box-container {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+.student-queries-header-text-headline {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #2d2d2d !important;
+  margin-bottom: 20px !important;
+}
+.student-queries-header-card {
+  padding: 27px 50px 27px 50px !important;
+  border: 1px solid #11bed2;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5) !important;
+}
+.student-queries-header-text {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #a19f9f !important;
+}
+.student-queries-header-text-value {
+  font-size: 36px !important;
+  color: #333 !important;
+  font-weight: 700 !important;
+}
+.student-queries-header-line-design {
+  border: 0;
+  width: 1px;
+  height: 110px;
+  background-color: rgba(0, 139, 226, 0.3);
+}
+.student-queries-header-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.student-queries-Calendar-box-container {
+  display: flex;
+  gap: 5px;
+}
+.student-queries-table-card-container {
+  margin-top: 20px !important;
+  padding: 32px !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5) !important;
+}
+.student-queries-table-headline {
+  font-size: 16px !important;
+  color: #231f20 !important;
+  font-weight: 700 !important;
+}
+.student-queries-table-show-date-range {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #9e9e9e !important;
+}
+.student-queries-all-input-field-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.student-queries-table-text-and-all-search-container {
+  display: flex;
+  justify-content: space-between;
+}
+.student-queries-table-data-box {
+  margin-top: 20px;
+}
+.student-queries-Calendar-box-container > date-range-btn {
+  display: none;
+}
+.student-queries-table-head-text {
+  font-size: 16px !important;
+  color: #7e92a2 !important;
+  font-weight: 500 !important;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  margin-left: 98px;
+}
+@media (min-width: 350px) and (max-width: 500px) {
+  .student-queries-header-text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .student-queries-header-line-design {
+    display: none;
+  }
+  .student-queries-table-text-and-all-search-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .student-queries-all-input-field-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .student-queries-header-text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .student-queries-header-line-design {
+    display: none;
+  }
+  .student-queries-table-text-and-all-search-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .student-queries-all-input-field-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.student-total-queries-open-action {
+  color: #11bed2;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 2px 10px;
+  border-radius: 100px;
+  background: rgba(17, 190, 210, 0.12);
+  display: grid;
+  place-items: center;
+}
+.student-total-queries-resolved-action {
+  color: #0583d2;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 2px 10px;
+  border-radius: 100px;
+  background: #cef;
+  display: grid;
+  place-items: center;
+}
+.student-total-queries-unResolved-action {
+  color: #fb5050;
+  font-size: 11px;
+  padding: 2px 10px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: rgba(240, 68, 56, 0.12);
+  display: grid;
+  place-items: center;
+}
+.student-Total-queries-header-box-container {
+  margin-top: 20px;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .student-Total-queries-header-box-container {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .student-Total-queries-header-box-container {
+    margin-top: 180px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .student-Total-queries-header-box-container {
+    margin-top: 100px;
+  }
+}

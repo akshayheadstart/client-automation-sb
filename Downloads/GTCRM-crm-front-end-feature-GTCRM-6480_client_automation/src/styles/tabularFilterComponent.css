@@ -1,0 +1,15 @@
+.selected-item-design-active{
+    background-color: #3c82dd !important;
+    color: white !important;
+ 
+
+}
+.selected-item-design{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border-radius: 12px !important;
+    padding: 5px 20px !important;
+}
+.selected-item-filter-sub-icon{
+    color: white !important;
+}

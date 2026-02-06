@@ -1,0 +1,356 @@
+.template-manager-view {
+  flex-grow: 1;
+  padding: 25px 0px;
+}
+
+.tm-container {
+  padding: 0 27px 0 25px;
+}
+
+.tm-tabs-wrapper .segmented-button {
+  width: 260px;
+}
+
+.tm-tabs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.template-manager-view > .template-manager-view {
+  padding: 0px !important;
+}
+
+.template-manager-header-box-container {
+  margin-top: 30px;
+}
+
+.tm-table-container {
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  margin-top: 32px;
+}
+
+.tm-table-container .segmented-button {
+  width: 130px;
+}
+
+.tm-table-container.tm-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tm-table-header {
+  background-color: #fff;
+}
+
+.tm-table-header .tm-table-header-cell {
+  color: #7e92a2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 187.5% */
+}
+
+.tm-table-row td {
+  border-bottom: 1px solid #eee;
+  color: #092c4c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  white-space: nowrap;
+  /* 214.286% */
+}
+
+.tm-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-icon-btn-wrapper {
+  border: 1px solid #a8c9e5;
+}
+
+.search-icon {
+  color: #008be2;
+  font-size: 18px;
+}
+
+.tm-search-wrapper {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 41px;
+}
+
+.tm-searchbox input {
+  padding: 6.5px 14px;
+  color: #000;
+}
+
+.tm-searchbox label {
+  font-size: 12px;
+}
+
+.tm-searchbox {
+  animation: query-searhbox 0.4s ease-in-out forwards;
+}
+
+.create-tm-btn {
+  display: inline-flex;
+  height: 40px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #0484d2;
+  margin: 0 5px;
+}
+
+.create-tm-btn:hover {
+  opacity: 0.8;
+  background: #0484d2;
+}
+
+.create-tm-btn-label {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 62px;
+}
+
+.script-thead {
+  background-color: #fff;
+}
+
+.script-thead .script-table-header {
+  color: #7e92a2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Create Template css */
+
+.create-template-main-container {
+  height: 100%;
+  width: 510px;
+  padding: 35px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22.667px;
+}
+
+.align-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-tm-header {
+  color: #092c4c;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.close-icon {
+  width: 32px;
+  height: 26px;
+  color: #092c4c;
+  font-weight: 600;
+}
+
+.mt-22 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* create form textfields */
+
+.tm-input-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8e8e93;
+  top: 2px;
+}
+
+.tm-input-root .tm-notched-outline {
+  border-color: #e6e8f0;
+  font-size: 12px;
+  color: #b3d2e2 !important;
+}
+
+.tm-input-root.Mui-focused .tm-notched-outline,
+.tm-input-root:hover .tm-notched-outline,
+.tm-text-root:hover .tm-text-notched-outline {
+  border-color: #3498ff !important;
+  font-size: 12px;
+  color: #3498ff !important;
+}
+
+.tm-text-root.Mui-focused .tm-text-notched-outline,
+.tm-text-root .tm-text-notched-outline {
+  border-color: #3498ff !important;
+}
+
+.tm-input-label.Mui-focused {
+  color: #8e8e93;
+}
+
+.tm-input-label.Mui-focused {
+  top: 2px;
+}
+
+.tm-input-root input {
+  padding: 8.5px 14px;
+}
+
+.sender-id-outline legend {
+  width: 55px;
+}
+
+.sms-type-root legend {
+  width: 60px !important;
+}
+
+.sms-type-root {
+  height: 40px;
+}
+
+.add-tag-outline legend {
+  width: 80px;
+}
+
+.sms-input-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8e8e93;
+  top: -4px;
+}
+
+.sms-input-label.Mui-focused {
+  color: #3498ff !important;
+  top: 0px !important;
+}
+
+.tm-input-root .tm-notched-outline.sms-type-outline {
+  color: #000 !important;
+}
+
+.sms-type-outline.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #b3d2e2 !important;
+}
+
+.sms-type-filter {
+  height: 40px;
+  width: 100%;
+}
+
+.tm-confirmation-dialog {
+  width: 325px !important;
+  padding: 32px !important;
+  gap: 18px !important;
+  min-width: 325px !important;
+}
+
+.info-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-icon-container svg {
+  color: #1c1b1f;
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .template-manager-header-box-container {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .template-manager-header-box-container {
+    margin-top: 180px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .template-manager-header-box-container {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .tm-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tm-header .align-row {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tm-header .align-row {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+}
+.create-on-date-text-design{
+  color: #65748B;
+font-size: 12px;
+font-weight: 400;
+}
+.template-name-design-text{
+  color: #121828;
+font-size: 16px;
+font-weight: 400;
+}
+.template-tags-length-box {
+  width: 20px;
+  height: 15px;
+  background-color: rgba(224, 98, 89, 1);
+  display: grid;
+  place-items: center;
+}
+.sms-template-table-action-box{
+  display: flex;
+  align-items: center;
+}
+.tooltip-deign-text{
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: rgba(9, 44, 76, 1) !important;
+  background-color: #fff !important;
+  white-space: nowrap;
+  padding: 0px !important;
+  justify-content: flex-start;
+}

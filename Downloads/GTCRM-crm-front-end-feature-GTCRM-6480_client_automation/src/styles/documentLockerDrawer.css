@@ -1,0 +1,92 @@
+.document-drawer-box-container{
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+}
+
+.drawer-body-container-document-drawer{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 35px !important;
+  }
+  .document-drawer-headline-text{
+    font-size: 18px;
+    color: #121828;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .document-locker-drawer-box-container{
+    display: flex;
+    gap: 5px;
+  }
+  .document-card-container{
+    width: 480px;
+    height: auto;
+    background-color: #D9D9D9;
+    margin-top: 5px;
+    overflow-x: scroll;
+  }
+  .document-drawer-headline-box-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .document-locker-save-button-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .user-profile-info-table-width{
+    min-width: 400px !important;
+  }
+  .document-drawer-arrow-box{
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    background-color: rgba(204, 238, 255, 1);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  /* @media (min-width: 350px) and (max-width:999px) {
+    .document-card-container{
+      height: 400px;
+      width: 300px;
+      overflow-x: scroll;
+    }
+} */
+
+  @media (min-width: 350px) and (max-width:500px) {
+    
+    .document-locker-drawer-box-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      /* .document-drawer-close-container{
+       padding-left: 300px;
+      } */
+      .document-card-container{
+        width: 360px;
+        height: auto;
+        background-color: #D9D9D9;
+        margin-top: 5px;
+        overflow-x: scroll;
+      }
+      .document-drawer-box-container{
+        padding: 10px;
+    }
+    .user-profile-info-table-width{
+      min-width: 250px !important;
+    }
+      
+      
+}
+.document-locker-close-icon{
+  cursor: pointer;
+}
+

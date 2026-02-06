@@ -1,0 +1,45 @@
+# Add 'repo' label to any root file changes
+normal:
+  - '*'
+
+# Add 'docs' label to any changes to the docs folder
+docs:
+  - 'docs/**'
+
+# Add 'tests' label to any changes to the tests folder
+tests:
+  - 'tests/**'
+
+# Add 'ci' label to any changes to the .github folder
+ci:
+  - '.github/**'
+
+# Add dependencies label to any changes to package.json or package-lock.json
+dependencies:
+  - 'package.json'
+  - 'package-lock.json'
+  - 'yarn.lock'
+
+# Add eslint label to any changes to .eslintrc.json or .eslintignore
+eslint:
+  - '.eslintrc.json'
+  - '.eslintignore'
+
+# Add prettier label to any changes to .prettierrc.json or .prettierignore
+prettier:
+  - '.prettierrc.json'
+  - '.prettierignore'
+
+# Add 'typescript' label to any changes to tsconfig.json
+typescript:
+  - 'tsconfig.json'
+
+# Add 'webpack' label to any changes to webpack.config.js
+webpack:
+  - 'webpack.config.js'
+
+# Add 'babel' label to any changes to .babelrc.json
+babel:
+  - '.babelrc.json'
+
+

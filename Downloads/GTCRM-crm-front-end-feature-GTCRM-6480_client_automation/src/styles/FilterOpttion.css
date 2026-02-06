@@ -1,0 +1,24 @@
+.filter_items_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter_text{
+  color: black;
+  font-weight: bold !important;
+font-size:20px !important;
+margin-left: 0 !important;
+}
+.ticket_text{
+    margin: 0 auto !important;
+    margin-top: 8px !important;
+}                         
+.close_btn{
+    height: 50px;
+}
+.filled_width{
+    width: 100% !important;
+}
+.drawer_width{
+    width: 400px !important;
+}

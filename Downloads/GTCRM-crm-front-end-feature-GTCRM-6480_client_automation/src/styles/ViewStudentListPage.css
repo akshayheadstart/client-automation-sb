@@ -1,0 +1,206 @@
+:root {
+  --view-student-list-page-primary-color: #11bed2;
+}
+.view-student-list-header-container {
+  background-color: var(--view-student-list-page-primary-color);
+  border-radius: 10px;
+}
+.view-student-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+.view-student-list-page-table-container {
+  margin-top: 1rem;
+}
+.view-student-list-page-table-container table {
+  white-space: nowrap;
+}
+.view-student-list-page-table-container table td {
+  font-size: 12px;
+}
+.view-student-list-page-table-container table .contact svg {
+  font-size: 20px;
+  color: #008be2;
+}
+.view-student-list-page-table-container thead {
+  background-color: #dcf8ff;
+}
+.view-student-list-page-table-container thead tr th {
+  text-transform: capitalize !important;
+  padding: 0.8rem;
+}
+.view-student-list-page-table-container thead tr {
+  font-weight: 400;
+}
+.view-student-list-page-table-container tbody tr:nth-child(even) {
+  background-color: #f0fcff;
+}
+.view-student-list-page-table-container .selected-student {
+  background: #ccf7fc !important;
+  border-left: 3px solid #008be1;
+}
+.view-student-list-page-table-container .not-rejected {
+  background-color: #cceeff;
+  color: #0583d2;
+  display: inline-block;
+  padding: 2px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.view-student-list-page-table-container .rejected,
+.view-student-list-page-table-container .booked {
+  background-color: #ffdfdd;
+  color: #e8817a;
+}
+.view-student-list-header-vertical-line {
+  background: #0080c9;
+  height: 100px;
+  width: 1px;
+}
+
+.student-list-header-action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.student-list-header-action-container .search-and-filter-container {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+.search-and-filter-container > .icon-container {
+  border: 1px solid white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.student-list-header-action-container button {
+  background-color: transparent;
+  font-size: 13px;
+}
+.student-list-header-action-container .manager-panel-and-slots-button {
+  border-radius: 20px;
+  background-color: #039bdc;
+  padding: 4px 15px;
+  cursor: pointer;
+}
+.student-list-header-action-container .add-application-button {
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 4px 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: center;
+}
+.student-list-header-action-container .add-application-button button svg {
+  font-size: 22px;
+}
+.view-student-list-date-time-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.view-student-list-date-time-container svg {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+.search-and-filter-container > .icon-container svg {
+  font-size: 20px;
+}
+.view-student-list-date-time-container p {
+  font-weight: 300;
+}
+.view-list-name-and-date-time-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view-student-list-header-container h6,
+.view-student-list-header-container h3,
+.view-student-list-header-container p {
+  line-height: 1.2;
+}
+
+.view-student-list-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.view-student-list-filter {
+  min-width: 170px;
+  max-width: 180px;
+}
+.view-student-list-filter span {
+  font-size: 14px;
+}
+.view-student-list-page-table-container .lead-action-content svg {
+  color: #008be2;
+}
+.view-student-list-page-table-container .lead-action-content {
+  font-weight: 500;
+}
+.view-student-list-page-table-container .lead-action-content h6 {
+  font-weight: 600;
+}
+
+.add-student-to-list-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  background-color: #0396d8;
+  border-radius: 10px;
+}
+
+.add-student-to-list-header-container .add-button button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+.add-student-to-list-header-container button svg {
+  font-size: 22px;
+  color: white;
+}
+.add-student-to-list-header-container label {
+  color: white !important;
+  font-size: 14px;
+}
+.search-and-add-actions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .view-student-list-header-vertical-line {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .view-student-list-wrapper > div {
+    flex-basis: 100%;
+  }
+  .view-list-header-container > h6 {
+    display: inline;
+  }
+  .view-list-header-container > h6:nth-child(2) {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,630 @@
+/* .emailTemplateWrapper  {
+} */
+/* .css-ur2jdm-MuiContainer-root {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+} */
+
+.template-top-info-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0px;
+}
+
+.template-top-info-Wrapper .info-steps {
+  width: 200px;
+  background: #a2a2a8;
+  color: #ffffff;
+  text-align: center;
+  margin: 2px -5px;
+  padding: 8px 0px;
+}
+
+.template-top-info-Wrapper .info-steps.active {
+  background-color: #009ada;
+}
+
+.template-top-info-Wrapper .right-angle {
+  clip-path: polygon(0% 0%,
+      90% 0%,
+      100% 50%,
+      100% 50%,
+      90% 100%,
+      0% 100%,
+      0% 100%,
+      00% 50%);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.template-top-info-Wrapper .left-right-angle {
+  clip-path: polygon(0% 0%,
+      90% 0%,
+      100% 50%,
+      100% 50%,
+      90% 100%,
+      0% 100%,
+      0% 100%,
+      10% 50%);
+}
+
+.template-top-info-Wrapper .left-angle {
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% 50%,
+      100% 100%,
+      50% 100%,
+      0% 100%,
+      0% 100%,
+      10% 50%);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* ====== */
+.basic-settings {
+  padding: 30px 0px;
+}
+
+.basic-settings .basic-settings-txt {
+  color: #474e51;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.doc-type-static {
+  margin: 24px 0px;
+}
+
+.doc-type-static .stacit-document-inner {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  flex-direction: row;
+}
+
+.stacit-document-inner .doc-label {
+  color: #121848;
+  font-weight: 500;
+  padding-right: 30px;
+}
+
+.upload-doc .attached-file {
+  color: #121848;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.upload-doc label {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #dddddd; */
+  /* border-radius: 8px; */
+}
+
+.upload-doc .css-xrszl6-MuiButtonBase-root-MuiButton-root {
+  height: 50px;
+  min-width: 90px;
+}
+
+.upload-doc .fileInput {
+  /* border: 1px solid #dddddd; */
+  height: 50px;
+  border-radius: 8px;
+  padding: 16px;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.save-next {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.save-next .tem-button {
+  margin-left: 10px;
+}
+
+/* -----------------Basic Layout-------------------- */
+.basciLayoutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.basic-layout-bnt-area button {
+  margin: 0px 8px;
+  color: #555555;
+  border-color: #dddddd;
+}
+
+.basic-layout-bnt-area .b-icons {
+  font-size: 14px !important;
+}
+
+/* ------- */
+.basic-layout-main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basic-layout-sidebar {
+  flex: 2;
+  min-height: 100vh;
+  background: #eceef0;
+}
+
+.template-content .temp-view {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dadadc;
+  height: 50px;
+  align-items: center;
+  padding: 0px 30px 0px 16px;
+}
+
+.template-content .temp-view .all-temp {
+  font-size: 16px;
+  font-weight: 600;
+  color: #141718;
+}
+
+.template-content .tem-count {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #929292;
+  font-size: 12px;
+  color: #ebebeb;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* accordion */
+.template-content .css-11332w3-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0 !important;
+}
+
+#template-header {
+  padding: 0px 6px 0px 16px;
+}
+
+.template-content .temp-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* height: 50px; */
+  /* padding: 0px 30px 0px 16px; */
+  /* border-bottom: 1px solid #a2a2a8; */
+  /* position: relative; */
+}
+
+.template-content .temp-details .details-txt {
+  color: #7d8185;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.template-content .temp-details .down-arrow {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  color: #929292;
+}
+
+/* ------------- */
+.layout-mian-content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f6f8;
+}
+
+.layout-tags-content {
+  padding-top: 20px;
+  background-color: #f4f6f8;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout-mian-content .layout-tags-content {
+    background-color: #ffffff;
+  }
+}
+
+.create-layout-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.create-layout {
+  cursor: pointer;
+  width: 314px;
+  height: 370px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.create-layout-main .create-layout .layout_content {
+  text-align: center;
+}
+
+.create-layout .create-txt {
+  color: #7d8185;
+}
+
+.create-layout-main .template-layout {
+  width: 320px;
+  height: 350px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.create-layout-main .template-layout .template-iframe iframe {
+  width: 100%;
+  height: 240px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.template-layout {
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.temp_title{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.template-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.template-editable-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.email-template-layout:hover {
+  -webkit-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.template-iframe {
+  display: block;
+  width: 100%;
+  height: auto
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.container:hover .template-iframe {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+
+.template-button {
+  background-color: #127999;
+
+}
+
+.email-template-layout {
+
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+  cursor: pointer;
+  margin: 10px 0px;
+  padding: 5px;
+  width: 100% !important;
+}
+
+.my-masonry-grid {
+  display: -webkit-box !important;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox !important;
+  /* Not needed if autoprefixing */
+  display: flex !important;
+  margin-left: -15px !important;
+  /* gutter size offset */
+  width: auto !important;
+}
+
+.my-masonry-grid_column {
+  padding-left: 15px !important;
+  /* gutter size */
+  background-clip: padding-box !important;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px !important;
+}
+
+/* Overly tutorial style- Basic layout */
+.your-templates-tutorial-arrow {
+  position: relative;
+  margin-top: 10px;
+}
+
+.email-layout-overly-tutorials-button {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px !important;
+  border-radius: 60px !important;
+}
+
+.email-layout-overly-tutorials-close-button {
+  color: white;
+}
+
+.your-templates-tutorial-arrow:before {
+  background-color: #6686D7;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -6px;
+  transform: rotate(45deg);
+  left: calc(20% - 6px);
+}
+
+.overly-tutorial-selector {
+  box-shadow: inset 0px 0px 2px 2px #6554C0;
+  border: 5px solid #D2CEEC;
+  border-radius: 8px;
+}
+
+.search-by-tag-tutorial-selector {
+  border: 2px solid #6554C0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 4px #b9b3db;
+}
+
+.overly-tutorial-title {
+  color: #2B356A;
+}
+
+@media screen and (max-width: 450px) {
+  .your-templates-tutorial-arrow:before {
+    left: calc(70% - 6px);
+  }
+
+  .search-templates-tutorial-arrow:before {
+    left: calc(50% - 6px);
+  }
+}
+
+.create-templates-overlay-tutorial {
+  margin-top: 160px;
+  left: 15%;
+}
+
+.create-templates-overlay-tutorial_when_one_template {
+  margin-top: 160px;
+  left: 15%;
+}
+
+.create-templates-overlay-tutorial_when_two_template{
+  margin-top: 160px;
+  left: 20%;
+}
+.create-templates-overlay-tutorial_when_three_template{
+  margin-top: 160px;
+  left: 15%;
+}
+.create-templates-overlay-tutorial_when_four_template{
+  margin-top: 160px;
+  left: 15%;
+}
+.create-templates-overlay-tutorial_when_five_template{
+  margin-top: 160px;
+  left: 10%;
+}
+
+/* masonaries template top mail and check icon styles */
+#templates-top-icon{
+  width: 50px;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+#templates-top-mail-icon{
+  height: 35px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 100;
+  background-color: #179dc7;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 12px;
+}
+#templates-top-check-icon{
+  height: 35px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 100;
+  background-color: #2c9f45;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 12px;
+}
+
+.template-manager-tab{
+  background: linear-gradient(93.01deg, #7499F9 0.8%, rgba(97, 141, 255, 0) 100%);
+  color: black !important;
+  border-radius: 5px !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+.template-manager-tab-default{
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+@media screen and (min-width: 800px) {
+  .create-templates-overlay-tutorial {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .create-templates-overlay-tutorial {
+    left: 35%;
+    margin-top: 100px;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .create-templates-overlay-tutorial_when_one_template {
+    left: 25%;
+    margin-top: 100px;
+  }
+  .create-templates-overlay-tutorial_when_two_template{
+    margin-top: 100px;
+    left: 15%;
+  }
+  .create-templates-overlay-tutorial_when_three_template{
+    margin-top: 100px;
+  }
+  .create-templates-overlay-tutorial_when_four_template{
+    margin-top: 100px;
+  }
+  .create-templates-overlay-tutorial_when_five_template{
+    margin-top: 100px;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .create-templates-overlay-tutorial_when_one_template {
+    left: 35%;
+  }
+  .create-templates-overlay-tutorial_when_two_template{
+    left: 25%;
+  }
+  .create-templates-overlay-tutorial_when_three_template{
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .create-templates-overlay-tutorial_when_three_template{
+    left: 25%;
+  }
+  .create-templates-overlay-tutorial {
+    left: 45%;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .create-templates-overlay-tutorial_when_one_template {
+    left: 40%;
+  }
+  .create-templates-overlay-tutorial_when_two_template{
+    left: 35%;
+  }
+  .create-templates-overlay-tutorial_when_three_template{
+    left: 30%;
+  }
+  .create-templates-overlay-tutorial_when_four_template{
+    left: 24%;
+  }
+  .create-templates-overlay-tutorial_when_five_template{
+    left: 15%;
+  }
+}
+
+/* @media screen and (min-width: 3000px) {
+  .create-templates-overlay-tutorial{
+    margin-left: 800px !important;
+  }
+}
+@media screen and (min-width: 3400px) {
+  .create-templates-overlay-tutorial{
+    margin-left: 1200px !important;
+  }
+} */
+.template-manager-header-box-container{
+  margin-top: 50px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+  .template-manager-header-box-container{
+   margin-top: 50px;
+  }
+ }
+@media (min-width: 601px) and (max-width: 900px) {
+  .template-manager-header-box-container{
+   margin-top: 180px;
+  }
+ }
+@media (min-width: 901px) and (max-width: 1199px) {
+  .template-manager-header-box-container{
+   margin-top: 100px;
+  }
+ }

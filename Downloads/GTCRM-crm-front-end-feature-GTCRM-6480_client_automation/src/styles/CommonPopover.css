@@ -1,0 +1,14 @@
+.popover-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.popover-single-button {
+  height: 30px !important;
+  font-size: 13px !important;
+  border-radius: 20px !important;
+  font-weight: normal !important;
+}

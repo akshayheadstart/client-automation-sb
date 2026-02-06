@@ -1,0 +1,314 @@
+name: Deploy Pull Request to Azure Web App
+run-name: Deploy to Azure Web App - ${{ github.event.pull_request.head.repo.full_name }} - ${{ github.event.pull_request.head.ref }}
+on:
+  pull_request:
+    branches:
+      - "feature/**"
+      - "hotfix/**"
+      - "release/**"
+      - "develop"
+    types: [opened, synchronize, closed, reopened]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
+env:
+  BRANCH_NAME: ${{ github.event.pull_request.head.ref }} # get branch name from pull request
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+  AZURE_WEBAPP_NAME: gtcrm-admin-${{ github.event.pull_request.number }} # add GTCRM- prefix to branch name
+  AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
+  NODE_VERSION: "18-lts" # set this to the node version to use
+  RESOURCE_GROUP: adgtcrm-${{ github.event.pull_request.number }}-rg # add GTCRM- prefix to branch name
+  # Use GitHub Secrets for dynamic environment variables
+  VITE_API_BASE_URL: ${{ secrets.SECRET_VITE_API_BASE_URL }}
+  VITE_SITE_KEY: ${{ secrets.SECRET_VITE_SITE_KEY }}
+  VITE_API_WEBSOCKET_URL: ${{ secrets.SECRET_VITE_API_WEBSOCKET_URL }}
+  VITE_API_ENVIRONMENT: ${{ secrets.SECRET_VITE_API_ENVIRONMENT }}
+  CI: false
+permissions:
+  contents: read
+  pull-requests: write
+  actions: write
+
+jobs:
+  pre-build:
+    # Only run this job if the PR is opened first time
+    if: (github.event.action == 'opened' || github.event.action == 'reopened') && github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    name: Pre Build Checks
+    steps:
+      - uses: actions/checkout@v3
+      - name: Login via Azure CLI
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Create Label based on files changed
+      - name: Create Label
+        uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      # Find if same comment exist then don't create new comment
+      - name: Find comment
+        uses: peter-evans/find-comment@v2
+        id: pr-preview-comment
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "The Pull Request preview is being updated."
+
+      # if comment exist then don't create new comment
+      - name: Create comment
+        if: ${{ steps.fc.outputs.comment-id == 0 }}
+        uses: peter-evans/create-or-update-comment@v2.1.0
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.pr-preview-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            The Pull Request preview is being updated. Hold tight while it's building ⚒️
+            This comment will be automatically updated when the new version is ready.
+          reactions: hooray
+
+      # Create new resource group for the web app
+      - name: Create resource group
+        uses: azure/cli@v1
+        with:
+          inlineScript: |
+            az group create --name ${{ env.RESOURCE_GROUP }} --location "Central India"
+
+      # Create a new resource
+      - name: Create App service plan
+        uses: Azure/cli@v1
+        with:
+          inlineScript: |
+            az appservice plan create --name ${{ env.AZURE_WEBAPP_NAME }}-${{ env.PR_NUMBER }}-plan --resource-group ${{ env.RESOURCE_GROUP }} --sku B1 --is-linux
+
+      # Set the deployment slot's app setting to point to the staging slot
+      - name: Set app setting
+        uses: Azure/cli@v1
+        with:
+          inlineScript: |
+            az webapp create --resource-group ${{ env.RESOURCE_GROUP }} --plan ${{ env.AZURE_WEBAPP_NAME }}-${{ env.PR_NUMBER }}-plan --name ${{ env.AZURE_WEBAPP_NAME }}-${{ env.PR_NUMBER }} --runtime "NODE:${{ env.NODE_VERSION }}" --output table
+
+  build:
+    # Ensure that the pre-build job is successful before running this job but run this job even if Pr is opened, synchronize
+    if: always() && github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    needs: pre-build # wait for pre-build to finish
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v3
+
+      # Setup environment variables
+      - name: Setup environment variables
+        run: |
+          echo "VITE_API_BASE_URL=${{ env.VITE_API_BASE_URL }}" >> $GITHUB_ENV
+          echo "VITE_SITE_KEY=${{ env.VITE_SITE_KEY }}" >> $GITHUB_ENV
+          echo "VITE_API_ENVIRONMENT=${{ env.VITE_API_ENVIRONMENT }}" >> $GITHUB_ENV
+          echo "VITE_API_WEBSOCKET_URL=${{ env.VITE_API_WEBSOCKET_URL }}" >> $GITHUB_ENV
+          echo "CI=${{ env.CI }}" >> $GITHUB_ENV
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.4.0
+          cache: "npm"
+
+      # Cache node_modules
+      - name: Cache node_modules
+        uses: actions/cache@v3.1.0-beta.2
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
+
+      # Install dependencies
+      - name: Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          npm install
+          npm run build --if-present
+
+      # Upload Artifact
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: node-app
+          path: dist
+  deploy:
+    # Run this job if pr is opened or reopened
+    #    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
+    #    if: (github.event.action == 'opened' || github.event.action == 'reopened') && github.event.action != 'closed'
+    if: always() && github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    needs: build # wait for build to finish
+    name: Deploy PR Preview to Azure
+    environment:
+      name: "Development"
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v3
+        with:
+          name: node-app
+
+      - name: Login via Azure CLI
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Enable HTTPS only
+        uses: Azure/cli@v1
+        with:
+          inlineScript: |
+            az webapp update --resource-group ${{ env.RESOURCE_GROUP }} --name ${{ env.AZURE_WEBAPP_NAME }}-${{ env.PR_NUMBER }} --set httpsOnly=true
+
+      - name: "Deploy to Azure WebApp"
+        id: deploy-to-webapp
+        uses: Azure/webapps-deploy@v2.2.5
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}-${{ env.PR_NUMBER }}
+          startup-command: "pm2 serve /home/site/wwwroot --no-daemon --spa"
+          https-only: true
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+      # find comment
+      - name: Find comment Deployed
+        uses: peter-evans/find-comment@v2
+        id: deploy-preview-comment
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "The Pull Request preview is being updated."
+
+        # Update Comment on PR with deployment URL
+      - name: "Comment on PR with deployment URL"
+        uses: peter-evans/create-or-update-comment@v2.1.0
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.deploy-preview-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            🚀 A preview of this Pull Request is ready. Click the link below to view it. 
+             ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+             Commit ID: ${{ github.event.pull_request.head.sha }}
+          reactions: rocket
+
+  # Deploy the zip file to the deployment slot
+  deploy-update:
+    # Run this job after build job is successful and pr is synchronized Check status of pre-build job
+    if: (github.jobs.pre-build.status != 'success' && github.jobs.build.status == 'success') && (github.event.action == 'synchronize')
+    runs-on: ubuntu-latest
+    name: Deploy Update PR Preview to Azure
+    needs: build
+    environment:
+      name: "Development"
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      # find comment
+      - name: Find comment Deployed
+        uses: peter-evans/find-comment@v2
+        id: deploy-preview-comment-update
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "🚀 A preview of this Pull Request is ready."
+
+        # Update Comment on PR with deployment URL
+      - name: Update PR Preview Comment
+        if: steps.deploy-preview-comment.outputs.comment-id != 0
+        uses: peter-evans/create-or-update-comment@v2.1.0
+        with:
+          comment-id: ${{ steps.deploy-preview-comment-update.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            The Pull Request preview is being updated. Hold tight while it's building ⚒️
+            This comment will be automatically updated when the new version is ready.
+          reactions: hooray
+
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v3
+        with:
+          name: node-app
+
+      - name: Login via Azure CLI
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: "Deploy update to Azure WebApp"
+        id: deploy-to-webapp
+        uses: Azure/webapps-deploy@v2.2.5
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}-${{ env.PR_NUMBER }}
+          startup-command: "pm2 serve /home/site/wwwroot --no-daemon --spa"
+          https-only: true
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+      # find comment
+      - name: Find comment Deployed
+        uses: peter-evans/find-comment@v2
+        id: initial-deploy-preview-comment
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "The Pull Request preview is being updated."
+
+      # Update comment on PR with deployment URL
+      - name: Update PR Preview Comment
+        uses: peter-evans/create-or-update-comment@v2.1.0
+        with:
+          comment-id: ${{ steps.initial-deploy-preview-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            🚀 A preview of this Pull Request is ready. Click the link below to view it.
+             ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+             Commit ID: ${{ github.event.pull_request.head.sha }}
+          reactions: rocket
+
+      # Delete Resources once PR is closed
+  cleanup-resources:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Cleanup Resources on PR Close
+    environment:
+      name: "Development"
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - name: Login via Azure CLI
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Delete resource group and webapp
+      - name: Delete Resource Group
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az group delete --name ${{ env.RESOURCE_GROUP }} --yes
+
+      # find previous comment
+      - name: Find comment Deployed
+        uses: peter-evans/find-comment@v2
+        id: deploy-preview-comment
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "🚀 A preview of this Pull Request is ready."
+
+      # Update found comment with new content
+      - name: Delete Comment
+        if: steps.deploy-preview-comment.outputs.comment-id != 0
+        uses: peter-evans/create-or-update-comment@v2.1.0
+        with:
+          comment-id: ${{ steps.deploy-preview-comment.outputs.comment-id }}
+          edit-mode: replace
+          body: |
+            🏁 The preview of this Pull Request has been deleted.

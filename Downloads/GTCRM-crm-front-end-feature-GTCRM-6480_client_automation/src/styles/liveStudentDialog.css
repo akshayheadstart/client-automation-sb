@@ -1,0 +1,38 @@
+.live-student-headline-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  background-color: #fafbff;
+}
+.live-student-text-to-create {
+  font-size: 20px;
+  font-weight: 700;
+}
+.live-student-name-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(9, 44, 76, 1);
+}
+
+.live-student-email-text {
+    font-size: 14px;
+    font-weight: 400;
+  color: rgba(9, 44, 76, 0.8);
+  max-width: 200px;
+  word-wrap: break-word;
+}
+.live-student-course-text {
+  font-size: 13px;
+  font-size: 400;
+  color: #008ce0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.pagination-container-live-student {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

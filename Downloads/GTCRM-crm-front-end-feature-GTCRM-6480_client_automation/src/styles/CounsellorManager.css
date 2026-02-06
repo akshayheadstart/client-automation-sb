@@ -1,0 +1,116 @@
+.counsellor-manager-popover-box {
+    padding: 22px 10px 10px 10px;
+}
+.add-course-button {
+    border-radius: 20px !important;
+    font-weight: normal !important;
+    height: 25px !important;
+    background-color: #CEF !important;
+    border: none !important;
+}
+.counselor-manager-table-container{
+    white-space: nowrap;
+}
+.counselor-manager-table-container th{
+    padding: 1.5rem;
+}
+.counselor-manager-avatar{
+    background-color: rgb(255, 135, 155);
+}
+.counselor-manager-counselor-name{
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+.pagination-container-counsellor-manager{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.loading-animation-counselor-manager{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counselor-manager-heading{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+}
+.counselor-manager-filters{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+}
+.map-head-counselor-container {
+    display: flex;
+    gap: 8px;
+}
+.counsellor-allocated-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-design-counsellor-search {
+    color: rgb(10, 10, 10);
+  }
+  .allocate-counsellor-dialog-box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+  }
+  .counsellor-manager-course-length-box{
+    width: 20px;
+    height: 15px;
+    background-color: rgba(224, 98, 89, 1);
+    display: grid;
+    place-items: center;
+  }
+  .counsellor-manager-head-text{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #7E92A2 !important;
+  }
+  .counsellor-manager-headline-text {
+    color: #231f20;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  @media (min-width: 350px) and (max-width: 600px) {
+    .allocate-counsellor-dialog-box-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:20px;
+        justify-items: center;
+      }
+  }
+  .counsellor-manager-header-box-container{
+    margin-top: 30px;
+   }
+  @media (min-width: 350px) and (max-width: 600px) {
+    .counsellor-manager-header-box-container{
+     margin-top: 30px;
+    }
+   }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .counsellor-manager-header-box-container{
+     margin-top: 180px;
+    }
+   }
+  @media (min-width: 901px) and (max-width: 1199px) {
+    .counsellor-manager-header-box-container{
+     margin-top: 100px;
+    }
+   }
+   .counsellor-manager-searchbox {
+    animation: query-searhbox 0.4s ease-in-out forwards;
+    flex-grow: 1;
+  }

@@ -1,0 +1,118 @@
+.audio-player {
+  width: 100%;
+  border-radius: 200px;
+  background: #f1f3f4;
+  color: #33a3e6;
+  font-size: 0.75em;
+  overflow: hidden;
+  .audio-timeline {
+    background: #b9d4ea;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    height: 4px;
+    .audio-progress {
+      background: #33a3e6;
+      width: 0%;
+      height: 4px;
+      transition: 0.25s;
+    }
+  }
+  .audio-player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+    gap: 10px;
+
+    > * {
+      display: flex;
+      align-items: center;
+    }
+    .toggle-audio-play {
+      &.play {
+        cursor: pointer;
+        position: relative;
+        left: 0;
+        height: 0;
+        width: 0;
+        border: 7px solid #0000;
+        border-left: 13px solid #33a3e6;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &.pause {
+        height: 15px;
+        width: 20px;
+        cursor: pointer;
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0px;
+          background: #33a3e6;
+          content: "";
+          height: 15px;
+          width: 3px;
+        }
+        &:after {
+          position: absolute;
+          top: 0;
+          right: 8px;
+          background: #33a3e6;
+          content: "";
+          height: 15px;
+          width: 3px;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .audio-time {
+      display: flex;
+
+      > * {
+        padding: 2px;
+      }
+    }
+    .audio-volume-container {
+      cursor: pointer;
+      .audio-volume-button {
+        height: 26px;
+        display: flex;
+        align-items: center;
+        .volume {
+          transform: scale(0.7);
+        }
+      }
+
+      position: relative;
+      z-index: 2;
+      .audio-volume-slider {
+        position: absolute;
+        left: -3px;
+        top: 8px;
+        z-index: -1;
+        width: 0;
+        height: 10px;
+        background: #b9d4ea;
+        transition: 0.25s;
+        border-radius: 100px;
+        .audio-volume-percentage {
+          background: #33a3e6;
+          height: 100%;
+          width: 75%;
+          border-radius: 100px;
+        }
+      }
+      &:hover {
+        .audio-volume-slider {
+          left: -123px;
+          width: 120px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="26" fill="#1E1E1E"/>
+<g id="Automaton">
+<path d="M-8829 -982C-8829 -983.105 -8828.1 -984 -8827 -984H4266C4267.1 -984 4268 -983.105 4268 -982V11023C4268 11024.1 4267.1 11025 4266 11025H-8827C-8828.1 11025 -8829 11024.1 -8829 11023V-982Z" fill="#404040"/>
+<path d="M-8827 -983H4266V-985H-8827V-983ZM4267 -982V11023H4269V-982H4267ZM4266 11024H-8827V11026H4266V11024ZM-8828 11023V-982H-8830V11023H-8828ZM-8827 11024C-8827.55 11024 -8828 11023.6 -8828 11023H-8830C-8830 11024.7 -8828.66 11026 -8827 11026V11024ZM4267 11023C4267 11023.6 4266.55 11024 4266 11024V11026C4267.66 11026 4269 11024.7 4269 11023H4267ZM4266 -983C4266.55 -983 4267 -982.552 4267 -982H4269C4269 -983.657 4267.66 -985 4266 -985V-983ZM-8827 -985C-8828.66 -985 -8830 -983.657 -8830 -982H-8828C-8828 -982.552 -8827.55 -983 -8827 -983V-985Z" fill="white" fill-opacity="0.1"/>
+<g id="Config">
+<g id="Group 2608709">
+<g id="Rectangle 375" filter="url(#filter0_d_0_1)">
+<rect x="-486" y="-27" width="542" height="768" rx="8" fill="white"/>
+</g>
+</g>
+<g id="Frame 2610153">
+<g id="Group 177381">
+<g id="Group 177374">
+<g id="close">
+<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26">
+<rect id="Bounding box" width="26" height="26" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_0_1)">
+<path id="close_2" d="M6.93366 20.5833L5.41699 19.0666L11.4837 13L5.41699 6.93329L6.93366 5.41663L13.0003 11.4833L19.067 5.41663L20.5837 6.93329L14.517 13L20.5837 19.0666L19.067 20.5833L13.0003 14.5166L6.93366 20.5833Z" fill="#1C1B1F"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-523" y="-48" width="592" height="818" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_0_1"/>
+<feOffset dx="-12" dy="4"/>
+<feGaussianBlur stdDeviation="11.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+</defs>
+</svg>

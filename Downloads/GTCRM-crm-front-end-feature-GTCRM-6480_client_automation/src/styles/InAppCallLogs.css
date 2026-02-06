@@ -1,0 +1,109 @@
+/* .in-app-call-logs  */
+.in-app-call-logs .appCall_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.call-dashboard-application-filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.in-app-call-logs .applog_search {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.consumption_main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.consumption_main .consumption_box {
+  min-width: 225px;
+  margin: 10px 10px 10px 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(18, 24, 40);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgb(100 116 139 / 12%) 0px 10px 15px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.consumption_main .consumption_box:hover .e_consumption_txt,
+.consumption_main .consumption_box:hover .s_consumption_txt,
+.consumption_main .consumption_box:hover .wh_consumption_txt {
+  font-weight: 600;
+}
+
+.consumption_main .consumption_box.callStatus_main {
+  min-width: 160px;
+  background-color: #f3f8fc;
+}
+.in-app-call-logs-filter{
+  width: 150px;
+}
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .consumption_main {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .call-dashboard-application-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #filter-item-call {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.in-app-call-logs-header-box-container{
+  margin-top: 20px;
+ }
+.communication-performance-header-box-container{
+  margin-top: 50px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+  .in-app-call-logs-header-box-container{
+   margin-top: 30px;
+  }
+  .communication-performance-header-box-container{
+    margin-top: 30px;
+   }
+ }
+@media (min-width: 601px) and (max-width: 900px) {
+  .in-app-call-logs-header-box-container{
+   margin-top: 180px;
+  }
+  .communication-performance-header-box-container{
+    margin-top: 180px;
+   }
+ }
+@media (min-width: 901px) and (max-width: 1199px) {
+  .in-app-call-logs-header-box-container{
+   margin-top: 100px;
+  }
+  .communication-performance-header-box-container{
+    margin-top: 100px;
+   }
+ }

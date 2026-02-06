@@ -1,0 +1,317 @@
+.status-button {
+  /* background-color: #14B8A6 !important; */
+  height: 30px !important;
+  font-size: 13px !important;
+  color: white !important;
+  border-radius: 20px !important;
+  font-weight: normal !important;
+}
+
+.snapshot_btn {
+  margin-left: 10px !important;
+  /* border-radius: 0px !important; */
+  border: 1px solid black !important;
+  color: black !important;
+  font-weight: normal !important;
+}
+
+.college_user_btn {
+  font-weight: normal !important;
+}
+
+.manager {
+  margin-top: 32px;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-bottom: 0px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow:0px 10px 60px rgba(226, 236, 249, 0.5) !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.add_rmv_btn,
+.download_btn {
+  border-radius: 20px !important;
+  font-weight: normal !important;
+}
+
+.download_btn {
+  margin-left: 10px !important;
+  border-radius: 20px !important;
+}
+
+.filter-btn {
+  height: 35px;
+  border-radius: 30px !important;
+  margin-right: 10px !important;
+  font-weight: normal !important;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #2c1111 !important; */
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.buttons_alignment {
+  display: flex;
+}
+
+.email_field {
+  width: 500px;
+  margin-bottom: 25px !important;
+}
+
+.data {
+  font-size: 14px !important;
+}
+
+.data1 {
+  font-size: 14px !important;
+}
+
+.create_user {
+  display: flex;
+  justify-content: space-between;
+  color: #3832a0 !important;
+  font-weight: normal !important;
+}
+
+.invite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+}
+
+.loading-animation {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  padding: 8px 16px !important;
+  background-color: #f7f8f8;
+}
+
+.not-found-animation {
+  display: flex;
+  justify-content: center;
+  min-height: 55vh;
+  align-items: center;
+}
+
+.pagination-container-user-manager {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-manager-user-name {
+  font-weight: 500;
+  color: #2c75e1;
+  text-transform: capitalize;
+}
+
+.last-active-on {
+  color: #e2807e;
+}
+
+.user-manager-table-tab-design-right-side-right-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-manager-left-Tab-design-active {
+  background-color: #008be2;
+  border-radius: 100px 0px 0px 100px;
+  height: 34px;
+  overflow: hidden;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-manager-left-Tab-design-inactive {
+  border: 1px solid;
+  border-color: #bcbec0;
+  border-radius: 100px 0px 0px 100px;
+  height: 34px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-manager-right-Tab-design-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #008be2;
+  border-radius: 0px 100px 100px 0px;
+  height: 34px;
+  overflow: hidden;
+  width: 100px;
+}
+
+.user-manager-right-Tab-design-inactive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #bcbec0;
+  border-radius: 0px 100px 100px 0px;
+  height: 34px;
+  width: 100px;
+}
+.user-manager-graph-chart-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.add-status-course-button {
+  border-radius: 20px !important;
+  font-weight: normal !important;
+  height: 25px !important;
+  background-color: #cef !important;
+  border: none !important;
+}
+.add-status-course-button-inActive {
+  border-radius: 20px !important;
+  font-weight: normal !important;
+  height: 25px !important;
+  background: rgba(240, 68, 56, 0.12) !important;
+  color: #FB5050 !important;
+  border: none !important;
+}
+.user-manager-head-text {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #7e92a2 !important;
+}
+.user-manager-download-icon-box {
+  border: 1px solid #0583d2;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.user-manager-headline-text {
+  color: #231f20;
+  font-size: 18px;
+  font-weight: 700;
+}
+.user-manager-title-head-text {
+  color: #2d2d2d;
+  font-size: 22px;
+  font-weight: 700;
+}
+@media (min-width: 350px) and (max-width: 499px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: #2c1111 !important; */
+  }
+  .user-manager-toggle-button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: #2c1111 !important; */
+  }
+  .user-manager-toggle-button-box {
+    display: flex;
+  }
+}
+@media (min-width: 350px) and (max-width: 900px) {
+  .user-manager-graph-chart-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+ .user-manager-header-box-container{
+  margin-top: 50px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+  .user-manager-header-box-container{
+   margin-top: 50px;
+  }
+ }
+ @media (min-width: 601px) and (max-width: 900px) {
+  .user-manager-header-box-container{
+    margin-top: 180px;
+  }
+
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .user-manager-header-box-container{
+   margin-top: 100px;
+  }
+ }
+ .user-manager-add-permission{
+  font-size: 12px;
+  font-weight: 400;
+ }
+ .user-manager-add-permission-dialog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+ }
+ .user-manager-add-permission-container{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.user-manager-add-permission-text{
+  font-size: 20px;
+  font-weight: 700;
+}
+.user-permission-list-paper-box-container {
+  padding: 40px;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 60px 0px #e2ecf9 !important;
+  background-color: #ffffff;
+}

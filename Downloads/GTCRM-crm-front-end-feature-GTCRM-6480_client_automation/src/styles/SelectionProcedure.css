@@ -1,0 +1,416 @@
+.create-selection-procedure-btn {
+  padding: 10px 24px;
+  border-radius: 50px;
+  background: #008be2;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 17.8px;
+  color: #fff;
+}
+.selection-procedure-card {
+  border-radius: 8px;
+  background: #09bbd0;
+}
+.selection-procedure-items-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+.selection-procedure-program-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.create-selection-procedure-drawer {
+  overflow-y: scroll;
+  max-height: 100%;
+}
+.create-selection-procedure-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.create-selection-procedure-header > h6 {
+  font-size: 1.4rem;
+}
+.create-selection-step1-divider {
+  width: 552px;
+  height: 1px;
+  background: #008be1;
+}
+.create-selection-step-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.create-selection-step-title h6 {
+  color: #008be1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.create-selection-step-close-icon {
+  color: #008be1;
+  font-size: 16px !important;
+}
+.create-selection-step2-divider {
+  width: 542px;
+  height: 1px;
+  background: #008be1;
+}
+.create-selection-step3-divider {
+  width: 426px;
+  height: 1px;
+  background: #008be1;
+}
+.create-selection-step4-divider {
+  width: 430px;
+  height: 1px;
+  background: #008be1;
+}
+.create-selection-step5-divider {
+  width: 570px;
+  height: 0.5px;
+  background: #008be1;
+}
+.create-selection-param-weightage-box {
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.create-selection-weightage-input-group {
+  width: 52px !important;
+  border-radius: 4px 0px 0px 4px !important;
+  border: 1px solid #a8c9e5 !important;
+}
+.create-selection-weightage-input-group-error {
+  border-radius: 4px 0px 0px 4px !important;
+  border: 1px solid red !important;
+}
+.create-selection-weightage-input-group .rs-input-group-addon {
+  padding: 10px 5px !important;
+}
+.create-selection-weightage-box {
+  padding-right: 0px !important;
+}
+.create-selection-parameter-box {
+  background: #e6fcff;
+  color: #039bdc;
+  padding: 5px 5px;
+  border: 1px solid #a8c9e5;
+  border-radius: 0px 4px 4px 0px;
+  min-width: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-selection-plus-btn {
+  width: 228px;
+  padding: 5px 10px;
+  background: #c7f9ff;
+  color: #008be1;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  border-radius: 4px;
+  border: 1px solid #a8c9e5;
+}
+
+/*view-selection-procedure */
+.custom-box {
+  position: relative;
+  margin-bottom: 16px;
+  width: 400px;
+}
+
+.custom-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-size: 16px;
+  color: #039bdc; /* Default label color */
+  background-color: white; /* Match the background color */
+  padding: 0 4px; /* Optional padding to match the custom style */
+  pointer-events: none; /* Ensure the label doesn't interfere with input focus */
+  transition: transform 0.3s ease-out; /* Add animation for floating effect */
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #8ca1b3; /* Default border color */
+  border-radius: 8px;
+  transition: border-color 0.3s ease-out; /* Add a smooth transition */
+}
+
+/* When the .custom-input is focused or has a value, style the .custom-label to float above the input */
+.custom-input:focus + .custom-label,
+.custom-input:not(:empty) + .custom-label {
+  transform: translateY(-24px) scale(0.75); /* Adjust vertical positioning and scaling */
+  background-color: white; /* Match the background color */
+  padding: 0 4px; /* Optional padding to match the custom style */
+}
+
+/* Optional: Set initial label position if the input has a value on page load */
+.custom-input:not(:empty) + .custom-label {
+  transform: translateY(-24px) scale(0.75);
+  background-color: white;
+  padding: 0 4px;
+}
+
+.selection-procedure-view-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+.view-selection-step-no {
+  margin-top: -70px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 9px;
+  height: 40px;
+  width: 40px;
+  background-color: #039bdc;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.view-selection-procedure-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selection-procedure-total-weightage-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eligibility-box::before {
+  content: "";
+  position: absolute;
+  top: 167%;
+  left: 150px;
+  height: 1px;
+  width: 110px;
+  border-bottom: 2px dashed #a8c9e5;
+  transform: rotate(90deg);
+}
+
+.eligibility-box::after {
+  content: "";
+  position: absolute;
+  top: 230%;
+  left: 200px;
+  transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #a8c9e5;
+}
+
+.group-discussion-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -127px;
+  height: 1px;
+  width: 127px;
+  border-bottom: 2px dashed #a8c9e5;
+  transform: translateY(-50%);
+}
+
+.group-discussion-box::after {
+  content: "";
+  position: absolute;
+  top: 47.5%;
+  left: -132px;
+  transform: rotate(180deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #a8c9e5;
+}
+
+.personal-interview-box::before {
+  content: "";
+  position: absolute;
+  top: 112%;
+  left: 158px;
+  height: 1px;
+  width: 95px;
+  border-bottom: 2px dashed #a8c9e5;
+  transform: rotate(90deg);
+}
+
+.personal-interview-box::after {
+  content: "";
+  position: absolute;
+  top: 122%;
+  left: 200px;
+  transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #a8c9e5;
+}
+
+@media screen and (min-width: 892px) {
+  .program-selection-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -132px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #a8c9e5;
+  }
+
+  .program-selection-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -130px;
+    height: 1px;
+    width: 130px;
+    border-bottom: 2px dashed #a8c9e5;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 892px) {
+  .program-selection-box::before {
+    content: "";
+    position: absolute;
+    top: 129%;
+    left: 167px;
+    height: 1px;
+    width: 75px;
+    border-bottom: 2px dashed #a8c9e5;
+    transform: rotate(90deg);
+  }
+
+  .program-selection-box::after {
+    content: "";
+    position: absolute;
+    top: 147%;
+    left: 200px;
+    transform: rotate(90deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #a8c9e5;
+  }
+
+  .group-discussion-box::before {
+    content: "";
+    position: absolute;
+    top: 106%;
+    left: 168px;
+    height: 1px;
+    width: 73px;
+    border-bottom: 2px dashed #a8c9e5;
+    transform: rotate(90deg);
+  }
+
+  .group-discussion-box::after {
+    content: "";
+    position: absolute;
+    top: 109.5%;
+    left: 200px;
+    transform: rotate(90deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #a8c9e5;
+  }
+
+  .personal-interview-box::before {
+    content: "";
+    position: absolute;
+    top: 112.5%;
+    left: 158px;
+    height: 1px;
+    width: 95px;
+    border-bottom: 2px dashed #a8c9e5;
+    transform: rotate(90deg);
+  }
+
+  .personal-interview-box::after {
+    content: "";
+    position: absolute;
+    top: 122%;
+    left: 201px;
+    transform: rotate(90deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #a8c9e5;
+  }
+
+  .eligibility-box::before {
+    content: "";
+    position: absolute;
+    top: 157%;
+    left: 157px;
+    height: 1px;
+    width: 95px;
+    border-bottom: 2px dashed #a8c9e5;
+    transform: rotate(90deg);
+  }
+
+  .eligibility-box::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 200px;
+    transform: rotate(90deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #a8c9e5;
+  }
+}
+.selection-procedure-header-box-container{
+  margin-top: 50px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+  .selection-procedure-header-box-container{
+   margin-top: 30px;
+  }
+ }
+@media (min-width: 601px) and (max-width: 900px) {
+  .selection-procedure-header-box-container{
+   margin-top: 180px;
+  }
+ }
+@media (min-width: 901px) and (max-width: 1199px) {
+  .selection-procedure-header-box-container{
+   margin-top: 100px;
+  }
+ }

@@ -1,0 +1,28 @@
+.absent-date-picker-container {
+  /* display: flex;
+    justify-content: space-between; */
+  margin: 24px 0px;
+}
+.rmdp-container {
+  width: 100%;
+}
+.rmdp-input {
+  border: 1px solid #90a3e9 !important;
+  border-radius: 5px !important;
+  height: auto !important;
+  margin: 1px 0 !important;
+  padding: 6px 8px !important;
+  width: 100% !important;
+}
+.rmdp-input:focus {
+  border-color: #3498ff !important;
+  box-shadow: 0 0 0 3px rgba(52, 152, 255, 0.25) !important;
+}
+.highlight-absent-date {
+  color: white !important;
+  background-color: red !important;
+}
+.absent-loader {
+  display: flex;
+  justify-content: center;
+}

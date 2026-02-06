@@ -1,0 +1,157 @@
+.automation-header-card {
+  border-radius: 20px;
+  padding: 24px;
+}
+.automation-manager-header-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.automation-manager-header-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.automation-manager-btn {
+  padding: 9px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #a9c9e5;
+  color: #008be2;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17.8px;
+}
+.automation-search-and-date-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.automation-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.automation-table-top-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 1rem 0;
+}
+.automation-manager-table thead {
+  background-color: transparent;
+}
+.automation-manager-table tbody tr td,
+.automation-manager-table thead tr th {
+  border-bottom: none;
+}
+
+.automation-manager-table tbody tr:not(:last-child),
+.automation-manager-table thead tr {
+  border-bottom: 1px solid #e7e9eb;
+}
+.automation-manager-table thead th {
+  color: #7e92a2 !important;
+  font-weight: 500;
+}
+.automation-manager-table .status {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 2px 10px;
+  font-size: 11px;
+}
+.automation-manager-table .active,
+.segment-name-and-date-container .active {
+  background: #cef;
+  color: #0583d2;
+}
+.automation-manager-table .stopped {
+  background: rgba(240, 68, 56, 0.12);
+  color: #fb5050;
+}
+.automation-manager-table .saved,
+.automation-manager-table .save {
+  background: rgb(191, 234, 255);
+  color: #0583d2;
+}
+.automation-details-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.automation-details-table-header > .view-on-editor-btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  background: #008be2;
+  font-weight: 400;
+}
+
+.automation-segmented-button-container {
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+}
+.automation-segmented-button {
+  text-align: center;
+  padding: 8px 20px;
+  border: 1px solid;
+  border-color: #039bdc;
+  color: #008be2;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.automation-segmented-active-tab {
+  background-color: #008be2;
+  color: #ffffff !important;
+}
+.automation-segmented-button:first-child,
+.automation-segmented-button:nth-child(2) {
+  border-right: none;
+}
+.automation-segmented-button:first-child {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.automation-segmented-button:last-child {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.automation-delivered-and-count-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.automation-delivered-and-count-container > p:last-child {
+  border-radius: 100px;
+  background: rgba(146, 146, 146, 0.1);
+  padding: 0px 10px;
+  color: #7e92a2;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+.automation-details-table-container table tbody td,
+.automation-delivered-and-count-container > p:first-child {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.automation-details-table-container .template-content {
+  color: #7e92a2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,26 @@
+.counsellor-call-activity-table-container {
+  position: relative;
+  overflow: visible;
+  border-radius: 24px;
+}
+.call-summary-details-table .quick-filter-container {
+  display: flex;
+  align-items: center;
+}
+.common-display-flex-properties {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.counsellor-call-activity-header {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.counsellor-call-activity-header > p {
+  color: #231f20;
+  font-size: 18px;
+  font-weight: 700;
+}
+.counsellor-call-activity-header > div {
+  gap: 6px;
+}

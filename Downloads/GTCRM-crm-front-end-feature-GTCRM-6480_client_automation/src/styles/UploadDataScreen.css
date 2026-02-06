@@ -1,0 +1,11 @@
+.card{
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+.text-alignment{
+margin-left: 50px ;
+}
+.field_width{
+    width: 500px !important;
+}

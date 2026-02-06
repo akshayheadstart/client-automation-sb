@@ -1,0 +1,21 @@
+.dv-status {
+  border-radius: 30px;
+  padding: 3px 10px;
+  margin: 3px;
+}
+.verified {
+  background: rgb(96 230 185 / 59%);
+  color: rgb(3 165 111);
+}
+.partially-verified {
+  background: rgba(4, 185, 55, 0.2);
+  color: #04b937;
+}
+.not-verified {
+  background: #f0eded;
+  color: grey;
+}
+.rejected {
+  background: rgba(240, 68, 56, 0.12);
+  color: rgb(180, 35, 24);
+}

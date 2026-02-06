@@ -1,0 +1,10 @@
+.calendar-photo-box{
+    display: grid;
+    place-items: end;
+    padding-right: 40px;
+   
+}
+.calendar-box{
+    padding-left: 40px;
+    padding-right: 40px;
+}

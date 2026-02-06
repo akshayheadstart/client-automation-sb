@@ -1,0 +1,35 @@
+.automation-campaign-tab-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+    border-bottom: 1px solid rgba(43, 43, 43, 0.1);
+}
+.first-design {
+    background-color: #fc715a !important;
+    color: white !important;
+}
+  .second-design {
+    background-color: #fbca0d !important;
+}
+  .third-design {
+    background-color: #95b23b !important;
+    color: white !important;
+}
+  .fourth-design {
+    background-color: rgb(31, 216, 216) !important;
+}
+  .card {
+    border-radius: 25px !important;
+    padding: 5px 10px;
+}
+.automation-campaign-rule-name {
+    font-weight: 500;
+    color: #2C75E1;
+    text-transform: capitalize;
+}
+.last-modified-on {
+    color: #e2807e;
+}
+#search-icon:hover{
+  cursor: pointer;
+}

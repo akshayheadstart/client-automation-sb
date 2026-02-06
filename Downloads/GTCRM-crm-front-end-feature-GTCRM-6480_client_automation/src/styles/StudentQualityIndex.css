@@ -1,0 +1,28 @@
+/*====================================================
+/*====================================================
+ Student Quality Index CSS
+====================================================*/
+.daterangepicker {
+  width: 100%;
+}
+
+.graphWrapper .noteBookWrapper {
+  padding: 40px;
+}
+.graphWrapper .noteBookWrapper .notebookIcon {
+  position: absolute;
+  top: 10px;
+  left: 26px;
+  font-size: 30px;
+}
+.graphWrapper .graphTitle {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #e6e8f0;
+}
+.apexcharts-menu-icon {
+  display: none;
+}
+.infoAnalysisWrapper .inflowAnalyisTitle {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #e6e8f0;
+}

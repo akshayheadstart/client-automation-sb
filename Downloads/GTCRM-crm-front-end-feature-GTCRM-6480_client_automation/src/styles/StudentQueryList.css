@@ -1,0 +1,137 @@
+.alignment {
+    text-align: center !important;
+    font-size: 20px !important;
+}
+
+.heading_Query_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.infoIcon {
+    font-size: 14px !important;
+}
+
+.link_design {
+    color: black;
+    padding: 5px;
+}
+
+.link_design:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.tabList {
+    border: 1px solid #e6e8f0;
+}
+
+.table {
+    margin-top: 5px !important;
+    width: 100% !important;
+}
+
+.tab_text {
+    /* margin-right: 10px; */
+    /* padding: 10px 0; */
+    text-transform: initial;
+}
+
+.statusButton {
+    height: 24px !important;
+    font-size: 13px !important;
+    color: white !important;
+    border-radius: 20px !important;
+    font-weight: normal !important;
+}
+
+.statusButton1 {
+    height: 30px !important;
+    font-size: 13px !important;
+    color: white !important;
+    border-radius: 20px !important;
+    font-weight: normal !important;
+}
+
+.icons {
+    display: flex !important;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawer_width1 {
+    width: 750px !important;
+}
+
+/* ticket details */
+.ticket {
+    border-bottom: 1px solid #3832A0 !important;
+    margin-top: 0px !important;
+}
+
+.status {
+    border-bottom: 1px solid #e6e8f0;
+}
+
+.status1 {
+    border-bottom: 1px solid #e6e8f0;
+    height: 40px;
+    padding-top: 8px !important;
+}
+
+.details_text {
+    font-weight: 400 !important;
+}
+
+.lable {
+    color: gray;
+    font-weight: bold !important;
+}
+
+.first_letter {
+    background-color: rgb(142, 164, 184);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bolder !important;
+    margin-right: 10px !important;
+}
+
+.text_design {
+    background-color: rgb(214, 241, 247);
+    height: 35px;
+    width: 250px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+.chat_body {
+    display: flex;
+    margin-top: 10px;
+}
+
+.main_chat_body {
+    height: 350px;
+    border-bottom: #e6e8f0 1px solid;
+
+}
+.progress_icon{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.send_icon{
+    color: #3832A0 !important;
+}
+.send_icon1{
+    background-color: #3832A0 !important;
+    color: white !important;
+}

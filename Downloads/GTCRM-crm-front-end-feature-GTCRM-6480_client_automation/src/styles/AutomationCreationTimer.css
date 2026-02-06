@@ -1,0 +1,56 @@
+.automation-timer-container {
+  display: flex;
+  min-width: 100%;
+}
+
+.automation-timer-container>div {
+  position: relative;
+  height: 66px;
+}
+
+.automation-timer-container>div .hour {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.automation-timer-container>div .type {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.automation-timer-container .timer-indicator {
+  background-color: #b3d2e2;
+  position: absolute;
+  top: -5px;
+  height: 10px;
+}
+
+.automation-timer-container .timer-overlay {
+  border-top: 1px solid #b3d2e2;
+  border-bottom: 1px solid #b3d2e2;
+  background: #e8feff;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.automation-timer-container .timer-overlay>div {
+  position: relative;
+  height: 100%;
+}
+
+.automation-timer-container .timer-overlay>div>svg {
+  color: #b3d2e2;
+}
+
+.automation-timer-container .timer-overlay>div .arrow-left-icon {
+  position: absolute;
+  left: -14px;
+  top: 28%;
+}
+
+.automation-timer-container .timer-overlay>div .arrow-right-icon {
+  position: absolute;
+  right: -14px;
+  top: 28%;
+}

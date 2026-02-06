@@ -1,0 +1,67 @@
+.user-session-role {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  opacity: 65%;
+}
+.session-user-name {
+  color: #070707;
+}
+.fa-sync-alt {
+  color: #4a7adc;
+}
+.pagination1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.loading-animation-for-session {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-container-user-session {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.manage-session-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.user-activity-bold {
+  display: inline-block;
+  font-weight: bold;
+}
+.manage-session-action-button {
+  border-radius: 20px !important;
+  font-weight: normal !important;
+}
+.user-session-header-box-container{
+  margin-top: 40px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+ 
+  .user-session-header-box-container{
+    margin-top: 30px;
+   }
+ }
+@media (min-width: 601px) and (max-width: 900px) {
+ 
+  .user-session-header-box-container{
+    margin-top: 180px;
+   }
+ }
+@media (min-width: 901px) and (max-width: 1199px) {
+  
+  .user-session-header-box-container{
+    margin-top: 100px;
+   }
+ }

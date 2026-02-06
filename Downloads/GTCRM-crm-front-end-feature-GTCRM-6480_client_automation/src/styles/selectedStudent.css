@@ -1,0 +1,89 @@
+:root {
+  --selected-student-primary-color: #039bdc;
+  --selected-student-secondary-color: #dcf8ff;
+  --selected-student-tertiary-color: #f0fcff;
+}
+.selected-student-header {
+  background-color: var(--selected-student-primary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+}
+
+.selected-student-header label {
+  font-size: 14px;
+}
+.selected-student-header .heading-texts > p {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.selected-student-header .student-header-search-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -5px;
+}
+.student-header-search-box svg,
+.student-header-search-box label {
+  color: white;
+}
+.student-header-search-box-inner {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.student-header-search-box-inner > svg {
+  font-size: 20px;
+}
+.send-for-approval-btn > button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 9px 14px;
+  font-size: 14px;
+  width: 100%;
+}
+.selection-student-list-container table {
+  white-space: nowrap;
+}
+.selection-student-list-container thead {
+  background-color: var(--selected-student-secondary-color);
+}
+.selection-student-list-container table img {
+  width: 25px;
+  margin-left: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.selection-student-list-container thead tr th {
+  text-transform: capitalize !important;
+  padding: 0.8rem;
+}
+.selection-student-list-container thead tr {
+  font-weight: 400;
+}
+.selection-student-list-container tbody tr:nth-child(even) {
+  background-color: var(--selected-student-tertiary-color);
+}
+.selected-student {
+  background: #ccf7fc !important;
+  border-left: 3px solid #008be1;
+}
+.selected-student-filter {
+  width: 100%;
+  color: white;
+}
+.selected-student-filter > .rs-picker-toggle {
+  background-color: transparent !important;
+}
+.selected-student-filter svg {
+  color: white !important ;
+}
+.selected-student-filter span {
+  font-size: 14px;
+  color: white !important;
+}

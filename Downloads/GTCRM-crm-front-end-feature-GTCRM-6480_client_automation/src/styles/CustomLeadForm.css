@@ -1,0 +1,19 @@
+.custom-lead-box {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+}
+.create-lead-primary-key {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+@media (min-width: 350px) and (max-width: 850px) {
+ .Custom-lead-from-container{
+  margin-top: 100px;
+ }
+
+}
+

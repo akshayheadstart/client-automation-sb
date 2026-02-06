@@ -1,0 +1,51 @@
+.client-registration
+  .client-registration-content
+  .rs-picker-default
+  .rs-picker-toggle.rs-btn-lg {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 17px;
+  color: #65748b;
+}
+.client-registration
+  .client-registration-content
+  .rs-picker-date
+  .rs-picker-toggle.rs-btn-lg
+  .rs-picker-toggle-caret,
+.rs-picker-date .rs-picker-toggle.rs-btn-lg .rs-picker-toggle-clean {
+  top: 16px;
+}
+.client-registration table {
+  white-space: nowrap;
+}
+.client-registration thead th {
+  background-color: #4f81bd;
+  color: white !important;
+}
+.client-registration tbody tr:nth-child(odd) {
+  background-color: #dbebff;
+  border-bottom: 1px solid #4f81bd;
+}
+.client-registration tbody td {
+  padding: 8px 1rem !important;
+}
+.client-registration-dialog tbody td {
+  padding: 12px 1rem !important;
+}
+.client-reg-table-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600 !important;
+}
+.client-reg-table-help-icon {
+  font-size: 19px;
+  cursor: pointer;
+}
+.upload-image-container {
+  text-align: center;
+  border: 2px dashed rgb(226, 226, 226);
+  padding: 1.5rem;
+  cursor: pointer;
+}

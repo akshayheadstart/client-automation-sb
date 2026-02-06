@@ -1,0 +1,343 @@
+.resources-page {
+  flex-grow: 1;
+  padding: 16px 0px;
+}
+.resources-page > .resources-page-container {
+  padding: 0px !important;
+}
+
+.resource-heading {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.resource-course-dialog {
+  width: 324px;
+  position: relative;
+}
+
+.resource-create-question-dialog {
+  width: 506px;
+}
+
+.left-section {
+  margin: 10px 14px 10px 26px;
+}
+
+.resources-label {
+  color: #0a2d4c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 10px 2px;
+}
+
+.right-section {
+  background-color: #ffffff;
+  margin-right: 32px;
+  margin-left: 14px;
+  margin-top: 25px;
+  border-radius: 30px;
+  padding: 40px 28px;
+}
+
+.resources-label {
+  color: #0a2d4c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.center-align-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-category-text {
+  color: #092c4c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-icon {
+  color: #008be2;
+}
+
+.category-item {
+  height: 51px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.category-item.selected {
+  border: 2px solid #008ce0;
+}
+
+.category-item:hover {
+  opacity: 0.8;
+}
+
+.category-item .category-item-button {
+  height: 51px;
+  background-color: transparent;
+}
+
+.resource-form-submit-btn {
+  display: flex;
+  width: 69px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #008ce0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.resource-form-submit-btn.save-btn-disabled {
+  background-color: rgba(225, 226, 228, 0.26);
+}
+
+.resource-form-submit-btn:hover {
+  opacity: 0.8;
+  background: #008ce0;
+  color: #ffffff;
+}
+
+.resource-form-cancel-btn {
+  width: 70px;
+  height: 25px;
+  border-radius: 30px;
+  border: 1px solid #008be2;
+  background: #fff;
+  margin: 15px 5px;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+.resources-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 32px 0px 26px;
+}
+.resource-content {
+  margin-left: 32px;
+}
+.resource-update-content-text {
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .resources-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.send-update-button-design {
+  background-color: #008ce0 !important;
+  font-size: 12px !important;
+  height: 30px;
+  font-weight: 400 !important;
+  padding: 10px 25px !important;
+}
+.resource-form-cancel-btn {
+  display: flex;
+  width: 69px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #008be2;
+  background: #fff;
+  color: #092c4c;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.search-box-container {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  color: #008be2;
+  font-size: 18px;
+}
+
+.add-icon-btn {
+  height: 38px;
+  width: 40px;
+  background-color: #ffffff;
+  border: 1px solid #a8c9e5;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.add-icon {
+  color: #008be2;
+}
+
+.resources-searchbox {
+  animation: query-searhbox 0.4s ease-in-out forwards;
+  flex-grow: 1;
+}
+
+.category-item-skeleton {
+  border-radius: 10px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.category-item {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.category-item.selected {
+  border: 2px solid #9bcee7;
+}
+
+.list-btn {
+  padding: 0px;
+}
+
+.list-btn:hover {
+  background-color: transparent;
+}
+
+.category-count-circle {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #cef;
+}
+
+.category-count-circle .category-count-text {
+  color: #0583d2;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.41px;
+}
+
+.delete-edit-box {
+  display: none;
+}
+
+.category-item:hover .delete-edit-box {
+  display: inline-block;
+}
+
+.tags-select-picker {
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 0 2px;
+}
+
+.resource-tabs-wrapper .segmented-button {
+  width: 320px;
+  margin-bottom: 12px;
+}
+.resources-box-container .segmented-button {
+  width: 320px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+
+.m0 {
+  margin: 0;
+}
+.resources-header-box-container{
+  margin-top: 30px;
+ }
+@media (min-width: 350px) and (max-width: 600px) {
+  .resources-header-box-container{
+   margin-top: 50px;
+  }
+ }
+@media (min-width: 601px) and (max-width: 900px) {
+  .resources-header-box-container{
+   margin-top: 180px;
+  }
+ }
+@media (min-width: 901px) and (max-width: 1199px) {
+  .resources-header-box-container{
+   margin-top: 100px;
+  }
+ }
+ .center-align-items-tag {
+  display: flex;
+  flex-direction: row;
+}
+.accordion-question-summary{
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+.select-tag-and-school-program-box-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.select-picker-design {
+  border-radius: 8px !important;
+  border: 1px solid #b3d2e2 !important;
+}
+.dashboard-select-picker>.rs-picker-toggle{
+  border: 1px solid #a9c9e5 !important;
+  border-radius: 6px !important;
+}
+.visible-to-student-box-container{
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+.visible-to-student-box-text{
+  color: #121828;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
+.save-confirm-dialog-button-box{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.save-confirm-dialog-text-content{
+  color:  #49454F;
+text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+}
+.save-text-content-box-container{
+text-align: center;
+}

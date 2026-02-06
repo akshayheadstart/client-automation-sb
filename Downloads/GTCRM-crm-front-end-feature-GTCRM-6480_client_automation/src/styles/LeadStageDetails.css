@@ -1,0 +1,96 @@
+.counsellor-lead-stage-details-box {
+  fill: #fff;
+  filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 424px;
+}
+
+.lead-stage-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.lead-stage-details-title {
+  color: #231f20;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.lead-stage-details-date {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.lead-stage-details-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lead-stage-details-progressbar-box {
+  margin: 0px 0px 12px 0px;
+}
+
+.lead-stage-text {
+  color: #092c4c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.lead-stage-name-value-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px 2px 0px;
+}
+
+.lead-stage-value {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sub-stage-text-value-box {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.sub-stage-text {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.001px;
+}
+
+.lead-stage-details-sort-icon-box {
+  border: 1px solid #a9c9e5;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.lead-stage-details-icon-box .rs-picker {
+  width: 100px !important;
+  border: 1px solid #a9c9e5;
+  border-radius: 6px;
+}
+
+.lead-stage-details-icon-box .rs-picker .rs-picker-toggle-caret {
+  color: #0583d2;
+}

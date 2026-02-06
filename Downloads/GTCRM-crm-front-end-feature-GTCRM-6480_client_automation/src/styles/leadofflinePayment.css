@@ -1,0 +1,275 @@
+.lead-payment-Icon-box {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.lead-offline-payment-value-text-size {
+  color: #092c4c;
+  font-size: 14px;
+  font-weight: 500;
+}
+.lead-offline-payment-value-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.lead-offline-payment-captured-status,
+.lead-offline-payment-failed-status,
+.lead-offline-payment-method {
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  padding: 3px 10px;
+}
+
+.lead-offline-payment-captured-status {
+  color: #0fabbd;
+  background: rgba(17, 190, 210, 0.22);
+}
+
+.lead-offline-payment-failed-status {
+  color: #e06259;
+  background: rgba(224, 98, 89, 0.22);
+}
+.lead-offline-payment-status-text {
+  font-size: 11px;
+  font-weight: 400;
+}
+.lead-offline-payment-table-head {
+  padding: 16px 10px !important;
+}
+.lead-offline-payment-method {
+  color: #008be2;
+  background: rgba(0, 139, 226, 0.22);
+}
+.lead-offline-payment-invoice-table-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.arrow-invoice-icon {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.lead-offline-payment-menu-text,
+.lead-offline-payment-menu-text-name {
+  color: #092c4c !important;
+  font-size: 15px !important;
+}
+.lead-offline-payment-menu-text-name {
+  font-weight: 400 !important;
+}
+.lead-offline-payment-menu-text {
+  font-weight: 600 !important;
+}
+/* In voice Drawer */
+.in-voice-control-drawer-box-container {
+  width: 600px;
+  padding: 20px;
+  background-color: #fafbff;
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .in-voice-control-drawer-box-container {
+    width: 330px;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  .in-voice-control-drawer-box-container {
+    width: 370px;
+    margin-top: 20px;
+  }
+}
+.in-voice-drawer-box-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.in-voice-drawer-headline-text {
+  color: rgba(18, 24, 40, 1);
+  font-size: 18px;
+  font-weight: 600;
+}
+.in-voice-view-drawer-box-container {
+  width: 100%;
+  height: auto;
+  background: #d9d9d9;
+  margin: 10px 0px;
+  border-radius: 8px;
+}
+.in-voice-send-mail-button {
+  height: 38px;
+  padding: 10px 20px !important;
+  justify-content: center;
+  align-items: center;
+  background: #008ce0 !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+.in-voice-view-drawer-button-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.create-add-payment-headline-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-add-payment-text-to-create {
+  color: #092c4c;
+  font-size: 16px;
+  font-weight: 700;
+}
+.select-picker-design {
+  border-radius: 8px !important;
+  border: 1px solid #b3d2e2 !important;
+}
+.input-field-placeholder-design ::placeholder {
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.input-field-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.input-field-placeholder-color-for-check-picker
+  > .rs-btn-default
+  > .rs-stack
+  > .rs-stack-item
+  > .rs-picker-toggle-placeholder
+  > .multi-select-picker-placeholder {
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.dashboard-select-picker,
+.rs-picker-check-menu-items {
+  max-height: 170px !important;
+}
+.add-payment-upload-input-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #0583d2;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.input-field-for-select-picker .rs-picker-toggle-placeholder {
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.input-field-for-select-picker
+  > .rs-picker-toggle
+  > .rs-stack
+  > .rs-stack-item
+  > .rs-picker-toggle-value {
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.app-payment-save-button,
+.app-payment-save-button-disabled {
+  width: 99px;
+  padding: 10px 24px;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.app-payment-save-button {
+  background: rgba(0, 140, 224, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.app-payment-save-button-disabled {
+  background: rgb(242, 243, 244) !important;
+  color: rgb(210, 206, 206) !important;
+}
+.add-payment-save-box-container {
+  display: grid;
+  place-items: center;
+  margin-top: 16px;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .input-field-box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+.payment-card-course-info {
+  border-radius: 15px 15px 0px 0px;
+  background: #0583d2;
+  padding: 30px;
+  color: white;
+  min-height: 250px;
+  position: relative;
+}
+.payment-card-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.payment-icon-set-right {
+  position: absolute;
+  right: 0%;
+}
+.new-design-payment-button {
+  width: 353px;
+  background: #03045e;
+  border-radius: 100px;
+  color: white;
+  padding: 10px 0 10px 0;
+  box-shadow: 7px 7px 13px 0px #c5c5c5;
+}
+.new-design-payment-button-disabled {
+  width: 353px;
+  background: #e9e9eb !important;
+  border-radius: 100px;
+  color: rgb(139, 138, 138) !important;
+  padding: 10px 0 10px 0;
+}
+.course-info-new-design {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+
+.course-info-list {
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 21.98px !important;
+}
+.payment-dialog-close-box {
+  display: grid;
+  place-items: end;
+  width: 100%;
+}
+.invoice-pdf-button-design {
+  box-shadow: 0 5px 5px #3c3c3c42;
+  background-color: white;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 20%;
+}
+.lead-offline-leef-box {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lead-offline-details-table-box {
+  display: flex;
+  gap: 4px;
+  align-items: flex-start;
+}

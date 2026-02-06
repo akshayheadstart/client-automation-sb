@@ -1,0 +1,125 @@
+.full-width-height {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.fill {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.maps-maximum-city-text {
+  position: absolute;
+  bottom: 40px;
+  right: 45px;
+}
+
+.maps-maximum-title {
+  color: #008be2;
+  font-family: "Noto Sans-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.maps-maximum-descrip {
+  color: #008be2;
+  font-family: "Noto Sans-Light", Helvetica;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1850px) {
+  .maps-maximum-city-text {
+    bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 1691px) {
+  .maps-maximum-city-text {
+    bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 1537px) {
+  .maps-maximum-city-text {
+    bottom: 45px;
+  }
+
+  .maps-maximum-title {
+    font-size: 18px;
+  }
+
+  .maps-maximum-descrip {
+    font-size: 29px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .maps-maximum-city-text {
+    bottom: 30px;
+  }
+
+  .maps-maximum-title {
+    font-size: 18px;
+  }
+
+  .maps-maximum-descrip {
+    font-size: 29px;
+  }
+}
+
+@media only screen and (max-width: 1277px) {
+  .maps-maximum-city-text {
+    bottom: 20px;
+    right: -20px;
+  }
+
+  .maps-maximum-title {
+    font-size: 17px;
+  }
+
+  .maps-maximum-descrip {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 1157px) {
+  .maps-maximum-city-text {
+    top: 0;
+    right: 0;
+  }
+
+  .maps-maximum-title {
+    font-size: 17px;
+  }
+
+  .maps-maximum-descrip {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .maps-maximum-city-text {
+    display: none;
+  }
+}

@@ -1,0 +1,138 @@
+.checklist_text {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+}
+
+.checklist_text1 {
+  font-size: 0.9rem !important;
+}
+
+.border {
+  border-bottom: 1px solid rgba(165, 157, 157, 0.664) !important;
+}
+
+.border1 {
+  border-bottom: 1px solid rgba(165, 157, 157, 0.664) !important;
+  width: 100%;
+}
+
+.upload_file {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 50px 0;
+  cursor: pointer;
+}
+.upload_file_btn {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+.upload_icon {
+  font-size: 60px !important;
+  color: #3832a0;
+}
+.check-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select-file-to-upload {
+  color: blue;
+  text-decoration: underline;
+}
+.selected-file {
+  margin-top: 16px;
+  color: green;
+  font-weight: bold;
+}
+.file-uploading-loader-container {
+  color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.raw-data-name {
+  margin-bottom: 16px;
+  width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .raw-data-name {
+    width: 100%;
+  }
+}
+.check-list-title {
+  font-weight: 700 !important;
+  font-size: 18px;
+}
+.check-list-dialog-contents h6 {
+  font-weight: 600;
+  font-size: 15px;
+}
+.sample-file-and-next-btn-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.sample-file-and-next-btn-box > button {
+  text-decoration: underline;
+}
+.sample-file-and-next-btn-box > div > button:last-child {
+  border-radius: 30px;
+  padding: 10px 25px;
+  height: 38px;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: 1px solid #fff !important;
+}
+.sample-file-and-next-btn-box > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.lead-upload-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 3rem;
+}
+.lead-upload-card-wrapper div {
+  background-color: #d2f3f4;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lead-upload-card-wrapper span {
+  text-decoration: underline;
+  color: #008be2;
+}
+.check-list-check-box-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+}
+.lead-upload-container-box {
+  margin-top: 50px;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .lead-upload-container-box {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .lead-upload-container-box {
+    margin-top: 180px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .lead-upload-container-box {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,63 @@
+@mixin margin-auto {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.main-wrapper {
+	width: 90%;
+	max-width: 900px;
+	margin: 3em auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.feature-box-unable{
+	background: radial-gradient(81.25% 81.25% at 5.97% 11.67%, rgba(34, 183, 147, 0.3) 0%, rgba(65, 164, 255, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	min-width: 200px;
+	min-height: 80px;
+}
+.feature-text{
+	font-size: 14px;
+	font-weight: bold;
+}
+.feature-box-disable{
+	background: radial-gradient(81.25% 81.25% at 5.97% 11.67%, rgba(104, 125, 120, 0.3) 0%, rgba(125, 156, 185, 0.3) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+	min-width: 200px;
+	min-height: 80px;
+}
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Noto Sans-Regular", Helvetica;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  font-weight: bold;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

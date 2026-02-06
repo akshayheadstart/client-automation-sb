@@ -1,0 +1,43 @@
+.course-dialog {
+    width: 460px;
+    padding: 24px 20px;
+}
+
+.course-dialog-header {
+    margin-bottom: 16px;
+}
+
+.course-dialog-title {
+    color: #092C4C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    padding: 0;
+}
+
+.course-dialog-close-btn {
+    padding: 0;
+}
+
+.course-dialog-content {
+    padding: 5px 0;
+}
+
+.course-dialog-close-icon {
+    color: #1C1B1F;
+    height: 16px;
+    width: 16px;
+}
+
+.center-align-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}

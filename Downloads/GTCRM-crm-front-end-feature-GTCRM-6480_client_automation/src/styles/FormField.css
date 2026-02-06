@@ -1,0 +1,15 @@
+.form-field {
+    margin-bottom: 12px;
+}
+
+.notched-outlined {
+    border: 1px solid #B3D2E2; 
+}
+
+.text-field-control.Mui-focused .notched-outlined {
+    border: 2px solid #008CE0;
+}
+.text-field-control.Mui-focused .notched-outlined-error {
+    border: 2px solid #D14343;
+}
+

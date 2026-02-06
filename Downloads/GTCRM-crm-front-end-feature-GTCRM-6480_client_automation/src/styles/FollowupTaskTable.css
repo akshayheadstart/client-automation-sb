@@ -1,0 +1,184 @@
+.followup-task-main-table {
+  white-space: nowrap;
+}
+.followup-task-main-table thead {
+  background-color: white;
+}
+.followup-task-main-table thead th {
+  text-transform: capitalize !important;
+  font-size: 16px !important;
+  color: #7e92a2 !important;
+  font-weight: 500 !important;
+}
+.followup-student-name {
+  font-weight: 500;
+  cursor: pointer;
+}
+.followup-student-name:hover {
+  text-decoration: underline;
+}
+.followup-task-main-table td {
+  font-size: 14px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding: 3px 16px !important;
+}
+.followup-task-main-table th {
+  padding: 16px !important;
+}
+.followup-task-avatar {
+  background-color: #ff8db1;
+}
+.followupStatus {
+  border-radius: 30px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+.today {
+  color: rgb(85, 85, 253);
+  background-color: rgb(227, 245, 250);
+}
+.completed {
+  color: rgb(2, 192, 2);
+  background-color: rgb(225, 253, 225);
+}
+.upcoming {
+  color: rgb(20, 182, 174);
+  background-color: rgb(226, 255, 254);
+}
+.overdue {
+  color: #0583d2;
+  background-color: #cceeff;
+}
+.pending {
+  color: #fbb15b;
+  background-color: #fff2df;
+}
+.followup-task-table-counselor {
+  background-color: rgb(236, 236, 236);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.followup-date-range-container {
+  cursor: pointer;
+}
+.followup-date-range-container:hover .followup-date-range {
+  visibility: visible;
+}
+.followup-date-range {
+  font-weight: 300;
+  font-size: 14px;
+  color: #9e9e9e;
+  visibility: hidden;
+}
+.followup-task-tab {
+  border: 1px solid #a8c9e5;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #008be2;
+  min-width: 103px;
+}
+.followup-task-tab:first-child {
+  border-radius: 30px 0px 0px 30px;
+}
+.followup-task-tab:not(:first-child) {
+  border-left: none;
+}
+.followup-task-tab:last-child {
+  border-radius: 0px 30px 30px 0px;
+}
+.followup-task-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pending-followup-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.followup-task-filter-container {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+.followup-task-filter-container .rmdp-container {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.followup-task-filter-container .rmdp-input {
+  display: none;
+}
+
+.highlight-overdue-date {
+  color: white !important;
+  background-color: red !important;
+}
+.highlight-upcoming-date {
+  color: white !important;
+  background-color: rgb(20, 182, 174) !important;
+}
+.rmdp-panel-body li .b-deselect {
+  color: black;
+}
+
+.followup-task-selected-tab {
+  color: white;
+  background-color: #039bdc;
+}
+.followup-task-unselected-tab {
+  color: #6b7280;
+}
+.followup-task-table-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.followup-task-table-container table thead th {
+  text-transform: capitalize;
+}
+.followup-task-header-card {
+  margin: 12px 0px 20px 0px;
+  border: 1px solid #008be2;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+.followup-task-summary-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+
+@media screen and (max-width: 650px) {
+  .followup-task-tab {
+    border: none;
+  }
+  .followup-task-tab:first-child,
+  .followup-task-tab:last-child,
+  .followup-task-tab {
+    border-radius: 10px;
+  }
+}
+.followUp-task-header-box-container {
+  margin-top: 30px;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+  .followUp-task-header-box-container {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .followUp-task-header-box-container {
+    margin-top: 130px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .followUp-task-header-box-container {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,23 @@
+.tutorial-image {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform ease-in-out 0.3s;
+}
+
+
+.tutorial-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tutorial-page-dialog-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tutorial-text {
+    text-align: justify !important;
+}

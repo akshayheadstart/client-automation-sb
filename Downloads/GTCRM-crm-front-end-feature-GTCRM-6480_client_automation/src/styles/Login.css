@@ -1,0 +1,124 @@
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.authentication-container {
+  /* background-image: url(../images/Image_1920x1080_2.png); */
+  /* background-image: url(../images/Image_1920x1080.png); */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logo-container {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+}
+
+.authentication-wrapper {
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin: 0 3% !important;
+}
+
+.common-authentication-form {
+  background-color: white;
+  padding: 20px 30px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+}
+
+.common-authentication-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group-container {
+  display: flex;
+  gap: 5px;
+}
+.login-box-container-grid{
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  width: 100%;
+}
+.login-background-container {
+  background-image: url(../images/loginBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+}
+.simple-text{
+  font-size: 29px !important;
+  font-weight: bold !important;
+  color: #121828 !important;
+}
+.link-icon-box-container{
+  margin-left: 40px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+.link-logo-icon-container{
+  display: flex;
+  gap: 10px;
+}
+.logo-height-width{
+  height: 235px;
+  width: 305px;
+}
+.link-icon-box-container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  visibility: hidden;
+}
+.login-logo-container{
+  display: none;
+}
+.link-icon-action{
+cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 1000px) {
+  .link-icon-box-container2{
+    visibility: visible;
+   margin-left: 10px;
+   margin-bottom: 20px;
+  }
+  .show-grid{
+    display: none;
+  }
+  .logo-height-width{
+    height: 100px;
+    width: 200px;
+  }
+  .login-logo-container{
+    display: block;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 350px) and (max-width: 700px) {
+  .common-authentication-form {
+    background-color: white;
+    padding: 20px 30px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+}
+}

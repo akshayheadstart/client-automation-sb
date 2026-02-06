@@ -1,0 +1,90 @@
+.data-segment-dialog-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data-segment-dialog-headline-text {
+  color: #092c4c;
+  font-size: 16px;
+  font-weight: 600;
+}
+.data-segment-dialog-box {
+  padding: 25px;
+  background-color: #fafbff;
+  /* width: 600px; */
+}
+
+.data-segment-add-user-box {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.data-segment-access-user-list-box {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.data-segment-access-text {
+  color: #231f20;
+  font-size: 16px;
+  font-weight: 400;
+}
+.data-segment-user-name-role-text {
+  color: #092c4c;
+  font-size: 14px;
+  font-weight: 400;
+}
+.data-segment-user-name-role-email {
+  color: rgba(9, 44, 76, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+}
+.data-segment-user-info-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 290px;
+}
+.data-segment-access-info-details-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data-segment-dialog-button{
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.data-segment-button-box-container{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+.data-segment-button-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.change-data-segment-box-container
+  > .css-hz1bth-MuiDialog-container
+  > .css-1vn59xe-MuiPaper-root-MuiDialog-paper {
+  max-width: 600px;
+  border-radius: 20px !important;
+  background-color: #fafbff;
+}
+.add-user-profile-role>.MuiTextField-root>.MuiOutlinedInput-root>.MuiAutocomplete-endAdornment>.MuiButtonBase-root  {
+  display: none !important;
+
+}
+.add-user-profile-role>.css-17q16gn-MuiFormControl-root-MuiTextField-root>.css-1xnbq41-MuiAutocomplete-root{
+  padding-right: 0px !important;
+
+}
+.add-user-profile-chip svg{
+  color: white !important;
+}
+.data-segment-label-background{
+  background-color: white !important;
+}

@@ -1,0 +1,53 @@
+.thank-you-content{
+    max-width:1000px;
+    margin:0 auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+  .thank-you-container{
+    height: initial;
+    max-width:620px;
+    margin:0 auto;
+    box-shadow: 4px 8px 40px 8px rgba(88, 146, 255, 0.2);
+    border-radius: 8px;
+  }
+  .thank-you-wrapper{
+    padding :30px;
+    text-align:center;
+  }
+  .thank-you-wrapper h1{
+      font-family: 'Kaushan Script', cursive;
+    font-size:4em;
+    letter-spacing:3px;
+    color:#5892FF ;
+    margin:0;
+    margin-bottom:20px;
+  }
+  .thank-you-wrapper p{
+    margin-top: 2.5rem;
+    font-size:1.3em;
+    color:#aaa;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing:1px;
+  }
+  .go-back-to-upload-file{
+    color:#fff;
+    background:#5892FF;
+    border:none;
+    padding:10px 50px;
+    margin:30px 0;
+    border-radius:30px;
+    text-transform:capitalize;
+    box-shadow: 0 10px 16px 1px rgba(174, 199, 251, 1);
+  }
+  
+  @media (min-width:360px){
+    .thank-you-wrapper h1{
+      font-size:4.5em;
+    }
+    .go-back-to-upload-file{
+      margin-bottom:20px;
+    }
+  }
+  

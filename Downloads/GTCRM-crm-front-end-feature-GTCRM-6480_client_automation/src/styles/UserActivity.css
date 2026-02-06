@@ -1,0 +1,39 @@
+.activity{
+    /* background-color:#111827; */
+    height: 100vh;
+    /* color: whitesmoke !important; */
+    padding: 10px;
+}
+.header{
+    background-color: #F9FAFC !important;
+}
+.search_field{
+    width: 500px !important;
+    border-radius: 40px !important;
+ margin: 0 auto !important;
+}
+.search_btn{
+    background-color: green !important;
+    color: white !important;
+    width: 100px ;
+}
+.reset_btn{
+    background-color: rgba(128, 128, 128, 0.178) !important;
+    border: 0px !important;
+    margin-left:10px !important;
+    width: 100px ;
+    color: black !important;
+}
+.btn_box{
+    margin-top: 30px;
+}
+.textDesign{
+    padding: 15px;
+    margin-top: 20px !important;
+    margin: 10px;
+    font-weight: bold !important;
+}
+.filter_text{
+    margin:20px !important ;
+    font-weight: bold !important;
+}

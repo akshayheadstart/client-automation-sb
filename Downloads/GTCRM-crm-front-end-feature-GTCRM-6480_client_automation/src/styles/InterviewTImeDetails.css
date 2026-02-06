@@ -1,0 +1,154 @@
+.schedule {
+  border: 1px solid #b3e2d2;
+  padding: 2.2rem 1rem;
+  border-radius: 5px;
+  background-color: #e9feff;
+  overflow-x: hidden;
+}
+.schedule-container {
+  transition: transform 0.3s ease;
+}
+.time-slots {
+  display: flex;
+}
+
+.schedule-container {
+  position: relative;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #b3d2e2;
+}
+.arrow-button svg {
+  font-size: 3rem;
+}
+
+.arrow-button.right {
+  right: -1.7rem;
+}
+
+.arrow-button.left {
+  left: -1.7rem;
+}
+
+.time-slot {
+  text-align: center;
+  padding: 5px 0;
+}
+.time-slot-6 {
+  position: relative;
+}
+
+.time-slot > div {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.time-slot > div > span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.interviews-container {
+  display: flex;
+  height: 35px;
+}
+
+.interview,
+.gap {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interview {
+  color: white;
+  background-color: #039bdc; /* Interview slot color */
+  cursor: default;
+}
+.interview svg {
+  font-size: 13px;
+  color: white;
+}
+.interview > button {
+  padding: 2px;
+}
+
+.interview > button:nth-child(1) {
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #09bbd0;
+}
+.interview > button:nth-child(2) {
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #09bbd0;
+}
+
+.gap {
+  position: relative;
+  top: -70px;
+}
+
+.plus-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.plus-button {
+  background-color: #09bbd0; /* Plus button color */
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 2.5rem;
+  border-radius: 5px;
+}
+.panel-type-and-moderator-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.panel-type-and-moderator-container .Type,
+.Moderator {
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.panel-type-and-moderator-container .Type.Online {
+  background-color: #92d8f7;
+}
+.panel-type-and-moderator-container .Type.Offline {
+  background-color: #bebebe;
+}
+.panel-type-and-moderator-container .Moderator {
+  background-color: #aef7ff;
+}
+
+@media screen and (max-width: 650px) {
+  .time-slot-6::after {
+    right: -20px;
+  }
+  .time-slots::after {
+    margin-left: 0.5rem;
+  }
+}

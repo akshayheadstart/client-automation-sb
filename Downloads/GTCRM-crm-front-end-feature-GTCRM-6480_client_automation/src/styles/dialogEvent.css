@@ -1,0 +1,26 @@
+.dialogEvent-details-desc{
+    border: 1px solid #E6E8F0;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.event-button-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.button-custom-design{
+    background-color: #3498db;
+}
+.button-custom-design:hover{
+    background-color: #227bb6;
+}
+.datePicker-container{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}

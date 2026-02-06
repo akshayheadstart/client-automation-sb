@@ -1,0 +1,28 @@
+.shared-lead-details-table-container table thead th {
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  color: rgb(158, 158, 158) !important;
+  font-weight: 500 !important;
+}
+.shared-lead-details-table-container table thead {
+  background-color: white;
+}
+.shared-lead-details-table-container table tbody td {
+  font-size: 12px !important;
+}
+.shared-lead-details-table-container
+  table
+  tbody
+  .student-contact-details
+  div
+  svg {
+  font-size: 20px !important;
+}
+
+.shared-lead-details-table-container .registered-name p,
+.shared-lead-details-table-container .registered-name h6 {
+  font-size: 12px !important;
+}
+.shared-lead-details-table-container .rs-picker-toggle-placeholder {
+  color: rgb(158, 158, 158) !important;
+}

@@ -1,0 +1,33 @@
+.lead-column {
+  cursor: pointer !important;
+  color: #e2807e !important;
+}
+
+.lead-column-default {
+  color: #e2807e !important;
+}
+
+.view-button,
+.completed-status {
+  color: #0583d2 !important;
+  border-radius: 20px !important;
+  background-color: #cceeff;
+  padding: 2px 15px;
+}
+.pending-status {
+  color: #a48b00 !important;
+  border-radius: 20px !important;
+  background-color: #fdee9ad4;
+  padding: 2px 15px;
+}
+
+.selected-raw-data {
+  background: #edecf8;
+  border-left: 3px solid blue;
+}
+.raw-data-upload-history-table-container table th {
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  color: rgb(165, 165, 165) !important;
+}

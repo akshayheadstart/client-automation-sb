@@ -1,0 +1,39 @@
+/* custom toggle switch */
+.toggle-switch-box {
+  width: 80px;
+  height: 27px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #a8c9e5;
+  background: #039bdc;
+}
+.toggle-thumb {
+  border-radius: 100px;
+  background: #fff;
+  padding: 0px 8px;
+}
+.and-or-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.toggle-text {
+  color: #fff !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  cursor: pointer;
+}
+
+.toggle-switch-or-box {
+  width: 80px;
+  height: 27px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #a8c9e5;
+  background: #0fabbd;
+}

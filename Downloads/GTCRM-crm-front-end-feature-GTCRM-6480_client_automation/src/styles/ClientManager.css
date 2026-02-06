@@ -1,0 +1,28 @@
+
+.client-manager-container table{
+    white-space: nowrap;
+}
+.client-manager-container th{
+    padding: 1.2rem 1rem;
+    background-color: #4f81bd;
+    color: white !important;
+}
+.client-manager-container tbody td{
+    border-bottom: 1px solid rgb(242, 242, 242);
+    padding: 8px 1rem !important;
+}
+.client-manager-container tbody tr:nth-child(odd){
+    background-color: #e0eeff;
+}
+.pagination-container-client-manager{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+.client-manager-container .loader-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}

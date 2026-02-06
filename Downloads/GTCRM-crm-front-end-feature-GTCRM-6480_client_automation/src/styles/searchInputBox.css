@@ -1,0 +1,56 @@
+.large-search-box-text-field input,
+.large-search-box-text-field label,
+.large-search-box-text-field svg {
+  color: white;
+}
+
+.large-search-box-text-field,
+.followup-search-input-field {
+  animation: large-search-box 0.4s ease-in-out forwards;
+}
+
+@keyframes large-search-box {
+  from {
+    width: 70px;
+  }
+  to {
+    width: 250px;
+  }
+}
+.large-search-box-text-field2 input,
+.large-search-box-text-field2 label,
+.large-search-box-text-field2 svg {
+  color: white;
+}
+
+.large-search-box-text-field2 {
+  animation: large-search-box2 0.4s ease-in-out forwards;
+}
+
+@keyframes large-search-box2 {
+  from {
+    width: 70px;
+  }
+  to {
+    width: 250px;
+  }
+}
+.large-search-box-text-field2 {
+  max-width: 200px;
+}
+
+@media (min-width: 1250px) and (max-width: 1400px) {
+  .large-search-box-text-field2 {
+    max-width: 150px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1249px) {
+  .large-search-box-text-field2 {
+    max-width: 110px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1099px) {
+  .large-search-box-text-field2 {
+    max-width: 107px;
+  }
+}

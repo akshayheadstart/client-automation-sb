@@ -1,0 +1,29 @@
+.data-label {
+  color: #a19f9f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+
+.data-count {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  min-height: 36px;
+}
+
+.data-section-divider {
+  border-color: #008be2;
+  opacity: 0.2;
+  /* width: 180px; */
+}
+
+.skeleton {
+  width: 180px;
+  height: 36px;
+}

@@ -1,0 +1,308 @@
+.panel-and-student-drawer-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.panel-and-student-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.panel-list-name-and-type {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.panel-and-student-layout h5 {
+  color: #039bdc;
+}
+.panel-edit-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.panel-edit-section label {
+  font-size: 13px;
+}
+.panel-edit-section input {
+  font-size: 13px;
+}
+.panel-edit-section button p {
+  font-weight: 500;
+}
+.panel-edit-section .save-button {
+  background-color: transparent;
+  border: 1px solid #008be2;
+  color: #008be2;
+  padding: 0 1.3rem;
+  border-radius: 20px;
+}
+.panel-edit-section .publish-button {
+  background-color: #008be2;
+  color: #d9fdff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.3rem 1.3rem;
+  border-radius: 20px;
+}
+.single-slot-container {
+  border: 1px solid #008be2;
+  padding: 7px;
+  color: #008be2;
+  border-radius: 5px;
+}
+.single-slot-container .duration-and-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-slot-container p {
+  font-size: 11px;
+}
+.badge-and-checkbox {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.badge-and-checkbox > span {
+  padding: 0;
+}
+.duration-and-checkbox p:first-child {
+  font-weight: 500;
+}
+.single-slot-container .slot-badge {
+  font-size: 0.5rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #e06259;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 2px;
+  font-weight: 900;
+}
+.single-slot-container svg {
+  color: #008be2;
+  font-size: 20px;
+}
+.panelist-and-student {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.panelist-and-student p {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.panelist-and-student .show-border {
+  border: 1px solid #008be2;
+  padding: 1px 2px;
+  border-radius: 3px;
+}
+.panelist-and-student svg {
+  font-size: 13px;
+  cursor: pointer;
+}
+.panelist-and-student .divider-line {
+  width: 1px;
+  background-color: #008be2;
+}
+
+.panelist-list-container,
+.application-list-container {
+  border: 1px solid #a8c9a5;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+.panelist-list-details {
+  overflow-y: auto;
+  margin-top: 1px !important;
+  padding: 0 0.7rem 0.7rem 0.7rem;
+}
+
+.panelist-heading-and-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #008be2;
+  padding: 0.8rem;
+}
+.panelist-heading-and-search .search-box-container {
+  border: 1px solid #a8c9a5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+.panelist-heading-and-search .search-box-container svg {
+  font-size: 18px;
+}
+.panelist-details .user-role {
+  color: #008be2;
+  font-style: italic;
+}
+.panelist-name-and-count span:last-child {
+  color: #008be2;
+}
+.panelist-details-container {
+  background-color: #dcf8ff;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 11px;
+  border-radius: 8px;
+}
+
+.panelist-details-container img {
+  height: 65px;
+}
+
+.panelist-details-container span {
+  display: inline-block;
+  font-size: 11px;
+}
+.panelist-details-container .panelist-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelist-list-details::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+.panelist-list-details::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+.panelist-list-details::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.highlighted-slot {
+  animation: highlight-animation 0.4s ease forwards;
+}
+@keyframes highlight-animation {
+  from {
+    transform: scale(0.5);
+    font-weight: normal;
+    box-shadow: none;
+  }
+  to {
+    transform: scale(1);
+    font-weight: bold;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: none;
+  }
+}
+
+.interview-time-details-container {
+  border-left: 1px solid #a8c9a5;
+  border-right: 1px solid #a8c9a5;
+  padding: 1.5rem;
+}
+.interview-summarized-time {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 12px;
+}
+.interview-summarized-time > div {
+  padding: 3px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+.interview-summarized-time div:nth-child(1) {
+  border: 1px solid #b3d2e2;
+  background-color: #e9feff;
+}
+.interview-summarized-time div:nth-child(2),
+.interviews-container .gap {
+  border: 1px solid #e06259;
+  background-color: #ffdfdd;
+  color: #e06259;
+  position: relative;
+}
+
+.interview-time-badge {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-color: #e06259;
+  font-size: 8px;
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interview-summarized-time div:nth-child(3) {
+  background-color: #039bdc;
+  color: white;
+  position: relative;
+}
+.interview-summarized-time div:nth-child(4) {
+  background-color: #09bbd0;
+  color: white;
+}
+
+/* Styles for the student list container */
+.student-list-container {
+  display: flex;
+  overflow-x: hidden;
+  /* width: 400px; */
+  /* width: 300px; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0; */
+}
+
+/* Styles for the student list */
+.student-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease;
+  white-space: nowrap; /* Ensure items are displayed in a single line */
+  gap: 0.5rem;
+}
+
+.student-list li {
+  border: 1px solid #008be2;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.applicant-search-box-in-planner-large {
+  animation: large-search-box 0.4s ease-in-out forwards;
+}
+
+@keyframes large-search-box {
+  from {
+    width: 70px;
+  }
+  to {
+    width: 180px;
+  }
+}

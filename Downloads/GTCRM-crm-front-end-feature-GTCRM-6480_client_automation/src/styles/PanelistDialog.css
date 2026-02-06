@@ -1,0 +1,22 @@
+.dialog-text-data{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dialog-box-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.dialog-text-info-data{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.dialog-text-weightage-data{
+    font-weight: 800;
+    color: black;
+    position: absolute;
+    background-color: white;
+}

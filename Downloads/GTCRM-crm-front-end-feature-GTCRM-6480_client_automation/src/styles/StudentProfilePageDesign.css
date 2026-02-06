@@ -1,0 +1,575 @@
+.studentProfile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.student-profile-text {
+  font-size: 22px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.studentProfile-header-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.notificationButton-text {
+  width: 13px;
+  height: 13px;
+  font-size: 10px;
+  background-color: #e06259;
+  color: white;
+  margin-top: 3px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.box-photo-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.checkCircleIcon {
+  position: absolute;
+  color: #cceeff;
+  background-color: #008be2;
+  border-radius: 50%;
+}
+
+.download-application-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 340px;
+}
+
+.download-application-small-screen {
+  display: none;
+}
+
+.student-profile-pdf-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-profile-pdf-box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-text-data-container {
+  /* background-color: #008be2; */
+  background-image: linear-gradient(to right, #008ce0, rgba(0, 140, 224, 1));
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.student-name-text-container {
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  gap: 10px;
+}
+
+.student-city-text-container {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  gap: 10px;
+}
+
+.program-level-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.student-course-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 9px;
+  justify-content: flex-end;
+}
+
+.supportAgentIncon-box {
+  width: 32px;
+  height: 32px;
+  background-color: #cceeff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.text-font-size {
+  font-size: 12px;
+}
+
+.card-maxWidth-container-info {
+  height: 180px;
+  max-width: 560px;
+  border: 1px solid #a8c9e5 !important;
+  border: 13px;
+  padding: 20px;
+}
+
+.card-maxWidth-container {
+  height: 90px;
+  max-width: 560px;
+  border: 1px solid #a8c9e5;
+  border-radius: 13px;
+  padding: 20px;
+}
+
+.student-data-text {
+  font-weight: 800;
+  position: absolute;
+  background-color: white;
+}
+
+.student-data-text-over-all-rating {
+  font-weight: 500;
+  position: absolute;
+  background-color: white;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transparent-background .rs-picker-select-dropdown {
+  background-color: transparent !important;
+}
+
+.button-flex-design {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button-design-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.panelist-name-text-data {
+  font-size: 15px;
+  color: #018ce2;
+  font-weight: 800;
+}
+
+.button-reject-design {
+  height: 28px;
+}
+
+.button-height-design {
+  height: 28px;
+}
+
+.button-back-to-list-design {
+  height: 28px;
+}
+
+.button-reject-design:hover {
+  background-color: #f4d4d2;
+}
+
+.loader-wrapper {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-profile-panelist-remarks {
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+}
+
+.student-profile-table-tab-design-right-side-right-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.student-profile-left-Tab-design-active {
+  background-color: #008be2;
+  border-radius: 100px 0px 0px 100px;
+  height: 34px;
+  overflow: hidden;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-profile-left-Tab-design-inactive {
+  border: 1px solid;
+  border-color: #bcbec0;
+  border-radius: 100px 0px 0px 100px;
+  height: 34px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-profile-right-Tab-design-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #008be2;
+  border-radius: 0px 100px 100px 0px;
+  height: 34px;
+  overflow: hidden;
+  width: 100px;
+}
+
+.student-profile-right-Tab-design-inactive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #bcbec0;
+  border-radius: 0px 100px 100px 0px;
+  height: 34px;
+  width: 100px;
+}
+
+.interview-scores {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.student-profile-Select-picker-box>.rs-picker-toggle {
+  background-color: transparent !important;
+}
+
+.student-profile-Select-picker-box svg {
+  color: white !important;
+}
+
+.student-profile-Select-picker-box span {
+  font-size: 14px;
+  color: white !important;
+}
+
+@media (min-width: 350px) and (max-width: 399px) {
+  .profile-photo-design {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .box-photo-data-container {
+    position: relative;
+  }
+
+  .photo-box-container {
+    position: absolute;
+    margin-top: 40px;
+  }
+
+  .checkCircleIcon {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 40px;
+  }
+
+  .download-application-text {
+    display: none;
+  }
+
+  .download-application-small-screen {
+    display: block;
+  }
+
+  .profile-text-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-box-container-student-profile {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .program-level-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .student-name-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .student-profile-text {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+
+  .HOD-all-button-Design {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 0%;
+    padding-left: 40px;
+    padding-right: 53px;
+    padding-bottom: 40px;
+  }
+
+  .button-flex-design {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 31px;
+  }
+
+  .back-to-list-button {
+    display: grid;
+    place-items: end;
+    margin-top: -14.2px;
+    margin-right: 32px;
+    margin-bottom: 40px;
+
+  }
+
+  .button-back-to-list-design {
+    top: 20px;
+    right: 55px;
+  }
+
+  .send-offer-letter-button-text {
+    font-size: 11px;
+  }
+
+  .student-profile-card-margin {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 695px) {
+  .profile-photo-design {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .box-photo-data-container {
+    position: relative;
+  }
+
+  .photo-box-container {
+    position: absolute;
+    margin-top: 40px;
+  }
+
+  .checkCircleIcon {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 40px;
+  }
+
+  .download-application-text {
+    display: none;
+  }
+
+  .download-application-small-screen {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .profile-text-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-box-container-student-profile {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .program-level-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .student-name-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .student-profile-text {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+
+  .HOD-all-button-Design {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 0%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+
+  .button-flex-design {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-left: 31px; */
+  }
+
+  .back-to-list-button {
+    display: grid;
+    place-items: end;
+    margin-top: -14.2px;
+    margin-right: 32px;
+    margin-bottom: 40px;
+
+  }
+
+  .button-back-to-list-design {
+    top: 20px;
+    right: 55px;
+  }
+
+  .send-offer-letter-button-text {
+    font-size: 11px;
+  }
+
+  .student-profile-card-margin {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 570px) and (max-width: 682px) {
+  .button-back-to-list-design {
+    height: 28px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 992px) {
+  .profile-photo-design {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .box-photo-data-container {
+    position: relative;
+  }
+
+  .photo-box-container {
+    position: absolute;
+    margin-top: 40px;
+  }
+
+  .checkCircleIcon {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 40px;
+  }
+
+  .download-application-text {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 240px;
+  }
+
+  .button-flex-design {
+    position: relative;
+  }
+
+  .back-to-list-button {
+    position: relative;
+  }
+
+  .HOD-all-button-Design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 999px) {
+  .card-maxWidth-container {
+    max-width: 100%;
+  }
+
+  .card-maxWidth-container-info {
+    max-width: 100%;
+  }
+
+  .HOD-all-button-Design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .button-flex-design {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 700px) {
+  .back-to-list-button {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 3200px) {
+  .back-button-list {
+    display: none;
+  }
+}

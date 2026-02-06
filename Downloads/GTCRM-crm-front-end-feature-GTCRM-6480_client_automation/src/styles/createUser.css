@@ -1,0 +1,44 @@
+.create_user_input_field_container{
+    display: flex;
+    gap: 10px;
+}
+@media (min-width: 350px) and (max-width: 900px) {
+    .create_user_input_field_container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .create_user_input_data_field_width{
+        max-width: 100% !important;
+    }
+}
+.create-user-input-field-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+@media (min-width: 350px) and (max-width: 600px) {
+    .create-user-input-field-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+.create-user-header-box-container{
+    margin-top: 30px;
+   }
+  @media (min-width: 350px) and (max-width: 600px) {
+    .create-user-header-box-container{
+     margin-top: 50px;
+    }
+   }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .create-user-header-box-container{
+     margin-top: 180px;
+    }
+   }
+  @media (min-width: 901px) and (max-width: 1199px) {
+    .create-user-header-box-container{
+     margin-top: 100px;
+    }
+   }

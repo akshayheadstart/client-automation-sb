@@ -1,0 +1,20 @@
+.preference-wise-application-table-head-cell{
+    background-color: white;
+    color: #F8F8F8;
+    border-color: #E6E8F0;
+}
+.preference-wise-application-table-head-cell-text{
+    color:#7E92A2 ;
+    font-size: 16px;
+    font-weight: 500;
+}
+.preference-wise-application-common{
+    border-color: #E6E8F0;
+    padding: 12px;
+}
+.preference-wise-application-table-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}

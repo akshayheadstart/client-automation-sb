@@ -1,0 +1,28 @@
+.color-theme-from-box{
+    margin-top: 20px;
+    padding: 24px;
+    background-color: #ffff;
+    border-radius: 16px;
+}
+.color-theme-from-text-headline{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+.color-theme-from-box-head{
+    display: grid;
+    place-items: center;
+}
+.color-theme-from-text-head{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.color-themes-picker-design{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 8px;
+}

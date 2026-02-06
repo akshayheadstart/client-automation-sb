@@ -1,0 +1,54 @@
+#time-line-tab-top-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#time-line-tab-action-and-filter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+#time-line-tab-filter-icon{
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: rgb(75, 73, 73);
+    width: 110%;
+}
+#time-line-tab-filter-icon:hover{
+    border-radius: 50% !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer !important;
+    width: 120%;
+    color: black;
+}
+#time-line-tab-button-icon{
+    border: none;
+    margin-left: -5px;
+}
+.time-line-tab-button{
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px!important;
+
+}
+.show-timeline-merge-text{
+color: #092C4C;
+font-size: 14px;
+font-weight: 400;
+}
+.time-line-tab-box-container{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+@media (min-width: 350px) and (max-width: 500px) {
+    #time-line-tab-top-section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .time-line-tab-box-container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+

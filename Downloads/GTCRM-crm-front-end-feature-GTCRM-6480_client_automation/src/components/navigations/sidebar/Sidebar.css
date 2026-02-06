@@ -1,0 +1,154 @@
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background-color: #8b8b8b !important;
+}
+
+.sidebar-single-link > a {
+  color: #d1d5db;
+}
+
+.sidebar-single-link:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.sidebar-single-link:hover a {
+  color: #10b981;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 38px;
+}
+
+.sidebar-wrapper .flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.center-align-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-wrapper .list-item-icon {
+  padding-right: 0;
+  min-width: 47px;
+  min-height: 38px;
+  margin-right: 16px;
+}
+
+.sidebar-wrapper .menu-active {
+  background-color: #008be2;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.dashboard-icon {
+  transform: scale(0.8);
+}
+.sidebar-call-log-menu:hover path {
+  stroke: white;
+}
+.sidebar-wrapper .menu-active svg.application-manager-icon ellipse,
+.sidebar-wrapper .sidebar-menu-item:hover svg.application-manager-icon ellipse,
+.sidebar-wrapper .menu-active svg.user-access-icon path:nth-child(4),
+.sidebar-wrapper
+  .sidebar-menu-item:hover
+  svg.user-access-icon
+  path:nth-child(4) {
+  fill: #fff;
+}
+
+.sidebar-wrapper .menu-active svg path.stroke-white,
+.sidebar-wrapper .sidebar-menu-item:hover svg path.stroke-white {
+  stroke: #fff;
+  fill: none;
+}
+
+.sidebar-wrapper .menu-active svg path.fill-white,
+.sidebar-wrapper .sidebar-menu-item:hover svg path.fill-white {
+  fill: #fff !important;
+}
+
+.sidebar-wrapper .menu-active svg.user-access-icon,
+.sidebar-wrapper .sidebar-menu-item:hover svg.user-access-icon {
+  fill: none;
+}
+
+.sidebar-wrapper .menu-active svg.custom-sidebar-icon path,
+.sidebar-wrapper .sidebar-menu-item:hover svg.custom-sidebar-icon path {
+  stroke: #fff;
+  fill: none;
+}
+
+.sidebar-wrapper .menu-active svg,
+.sidebar-wrapper .menu-active svg path {
+  fill: #fff;
+}
+.sidebar-wrapper .call-logs svg,
+.sidebar-wrapper .call-logs svg path {
+  fill: none !important;
+}
+
+.sidebar-wrapper .sidebar-menu-item {
+  padding: 0;
+  margin: 0px 16px;
+  border-radius: 5px;
+}
+
+.sidebar-wrapper .sidebar-menu-item:hover {
+  background-color: #008be2;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sidebar-wrapper .sidebar-menu-item:hover svg,
+.sidebar-wrapper .sidebar-menu-item:hover svg path {
+  fill: #fff;
+}
+
+svg.sidebar-svg-icons {
+  fill: #6b7280;
+  width: 20px;
+  height: 20px;
+}
+
+svg.sidebar-svg-icons:hover {
+  fill: #fff;
+}
+
+svg.interview-module-icon {
+  stroke: #7e92a2;
+  fill: none;
+}
+
+svg.interview-module-icon:hover {
+  stroke: #fff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.sidebar-label-text {
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  text-wrap: nowrap;
+}
+
+.sidebar-sublabel-text {
+  color: #fff;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+}
+
+.no-text-decoration:hover {
+  text-decoration: none;
+}

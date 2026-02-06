@@ -1,0 +1,453 @@
+.voucher-promoCode-manager-dashboard-box {
+  fill: #fff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  background: #fff;
+  padding: 12px 30px 10px 30px;
+  border-radius: 20px;
+  /* min-height: 153px; */
+  border: 1px solid #11bed2;
+  position: relative;
+}
+.voucher-promoCode-title-design {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(161, 159, 159, 1);
+}
+.promoCode-details-table-box {
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  padding: 30px;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+.promoCode-header-and-filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.promoCode-section-title {
+  color: #231f20 !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.create-promoCode-voucher-button {
+  height: 38px;
+  padding: 10px, 20px, 10px, 25px;
+  border: 1px solid rgba(0, 139, 226, 1);
+  color: rgba(9, 44, 76, 1) !important;
+  font-size: 14px !important;
+  white-space: nowrap !important;
+}
+.promoCode-filter-download-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.promoCode-header-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.promoCode-resolved-action,.promoCode-unResolved-action {
+  font-size: 11px;
+  padding: 2px 10px;
+  font-weight: 400;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  width: 70px;
+}
+
+.promoCode-resolved-action {
+  color: #0583d2;
+  background: #cef;
+}
+
+.promoCode-unResolved-action {
+  color: #D0004B;
+  background: rgba(208, 0, 75, 0.22);
+}
+.promoCode-value-text-size {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: rgba(9, 44, 76, 1) !important;
+  background-color: #fff !important;
+  white-space: nowrap;
+  padding: 0px !important;
+  justify-content: flex-start;
+}
+
+.pagination-container-promoCode {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-text-promoCode {
+  display: flex;
+  align-items: center;
+}
+.status-text-promoCode-text-size {
+  font-size: 11px;
+}
+.voucher-course-length-box {
+  width: 20px;
+  height: 15px;
+  background-color: rgba(224, 98, 89, 1);
+  display: grid;
+  place-items: center;
+}
+.voucher-course-box-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.voucher-promoCode-table-box-container {
+  margin-top: 20px;
+}
+.voucher-drawer-box-container {
+  width: 500px;
+  padding: 20px;
+  background-color: #fafbff;
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .voucher-drawer-box-container {
+    width: 330px;
+    padding: 20px;
+    background-color: #fafbff;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  .voucher-drawer-box-container {
+    width: 370px;
+    padding: 20px;
+    background-color: #fafbff;
+    margin-top: 20px;
+  }
+}
+.voucher-drawer-box-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.voucher-drawer-headline-text {
+  color: rgba(18, 24, 40, 1);
+  font-size: 18px;
+  font-weight: 600;
+}
+.voucher-drawer-content-box {
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  margin-top: 18px;
+}
+
+.voucher-value-text-size-applicant {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: rgba(9, 44, 76, 0.8) !important;
+  background-color: #fff !important;
+  white-space: nowrap;
+  padding: 0px !important;
+}
+.voucher-drawer-code-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.voucher-code-copy-text {
+  visibility: hidden;
+}
+.voucher-drawer-code-container:hover .voucher-code-copy-text {
+  visibility: visible;
+  cursor: pointer;
+}
+.create-voucher-promoCode-cancel-button {
+  width: 69px;
+  height: 30px;
+  padding: 10px, 20px, 10px, 20px;
+  border: 1px solid rgba(0, 139, 226, 1) !important;
+  color: rgba(9, 44, 76, 1) !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+.create-voucher-promoCode-create-button,
+.create-voucher-promoCode-create-button-disabled {
+  width: 69px;
+  height: 30px;
+  padding: 10px 20px;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+.create-voucher-promoCode-create-button {
+  background: rgba(0, 140, 224, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.create-voucher-promoCode-create-button-disabled {
+  background: rgb(242, 243, 244) !important;
+  color: rgb(210, 206, 206) !important;
+}
+.create-voucher-promoCode-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.promoCode-input-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.create-inputGroup-content > .rs-input-group-addon {
+  padding: 8px 4px !important;
+  font-size: 11px !important;
+  background-color: #fff !important;
+  color: rgba(202, 202, 202, 1) !important;
+}
+.create-promoCode-voucher-date-range-picker-design
+  > .rs-picker-toggle
+  > .rs-stack
+  > .rs-stack-item
+  > .rs-picker-toggle-caret {
+  color: rgba(0, 139, 225, 1) !important;
+}
+.promoCode-Divider-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.promoCode-create-data-segment-button {
+  padding: 8px 1px !important;
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .promoCode-input-box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media (min-width: 401px) and (max-width: 800px) {
+  .promoCode-input-box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.promoCode-button-text-size-for-count {
+  font-weight: 400 !important;
+}
+.create-voucher-promoCode-radio-box {
+  margin: 0px 0px;
+}
+.create-promoCode-voucher-headline-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-promoCode-voucher-text-to-create {
+  font-size: 20px;
+  font-weight: 700;
+}
+.promoCode-create-data-segment-button-preview {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: rgba(64, 75, 82, 1) !important;
+  border: 1px solid rgba(128, 197, 240, 1) !important;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.promoCode-preview-data-segment-details-box {
+  display: grid;
+  place-items: center;
+}
+.promoCode-input-box-container-preview {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.create-voucher-promoCode-create-button-discard {
+  width: 69px !important;
+  height: 30px !important;
+  padding: 10px, 20px, 10px, 20px !important;
+  background: linear-gradient(
+      0deg,
+      rgba(224, 98, 89, 0.22),
+      rgba(224, 98, 89, 0.22)
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff) !important;
+  font-size: 12px !important;
+  font-weight: 400;
+  color: rgba(224, 98, 89, 1) !important;
+}
+.create-promoCode-voucher-date-range-picker-design > .rs-picker-toggle {
+  height: 34px !important;
+}
+.select-data-segment-button-box {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.data-segment-value-text-size-data-segment {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: rgba(9, 44, 76, 1) !important;
+}
+.data-segment-select-box-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.data-segment-select-headline-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(9, 44, 76, 1);
+}
+.assigned-user-name-role-email {
+  color: rgba(9, 44, 76, 0.8);
+  font-size: 10px;
+  font-weight: 400;
+}
+.assigned-publisher-div-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.promoCode-value-hover:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.data-segment-select-box-search{
+  display: grid;
+  place-items: end;
+}
+.applied-promoCode-filter-program-name>.rs-picker-toggle{
+  border: 0 !important;
+}
+.applied-promoCode-filter-program-name>.rs-picker-toggle>.rs-stack>.rs-stack-item>.rs-picker-toggle-placeholder>.multi-select-picker-placeholder{
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.applied-promoCode-table-border-box{
+  white-space: nowrap;
+  background-color: #fff !important;
+  color:#8e8e93 !important ;
+  border-bottom: 1px solid rgba(238, 238, 238, 1) !important;
+}
+.promoCode-data-segment-content-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 14px;
+}
+.promoCode-data-segment-content {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.promoCode-data-segment-action-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+.promoCode-data-segment--action-card {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: fixed;
+  bottom: 270px;
+}
+@media (min-width: 1400px) and (max-width: 3200px) {
+  .promoCode-data-segment--action-card {
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 50%;
+  }
+}
+.select-picker-design{
+  border-radius: 8px !important;
+border: 1px solid #B3D2E2 !important;
+}
+.voucher-promoCode-loader-container{
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promoCode-preview-data-segment-details-container{
+  display: flex;
+  justify-content: space-between;
+}
+.promoCode-create-data-segment-button-edit {
+  padding: 8px 11px !important;
+}
+.input-field-placeholder-design ::placeholder{
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.create-promoCode-voucher-date-range-picker-design .rs-picker-toggle-placeholder {
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.input-field-for-select-picker .rs-picker-toggle-placeholder{
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.input-field-placeholder-color-for-check-picker>.rs-btn-default>.rs-stack>.rs-stack-item>.rs-picker-toggle-placeholder>.multi-select-picker-placeholder{
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.custom-tooltip-text-design{
+  font-size: 14px;
+}
+.voucher-action-content {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.voucher-action-button-box {
+  color: #121828;
+  font-size: 14px;
+  font-weight: 600 !important;
+}
+
+.voucher-option-with-header-content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  gap: 3px;
+}
+.error-message-text-design{
+  font-size: 12px;
+  color: rgba(224, 98, 89, 1);
+  font-weight: 400;
+}

@@ -1,0 +1,131 @@
+.update-resource-card-container {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  padding: 20px 50px 20px 42px;
+  position: relative;
+  margin: 20px 32px 20px 32px;
+  cursor: pointer;
+}
+.update-resource-title {
+  color: #0a2d4c;
+  font-size: 18px;
+  font-weight: 700;
+}
+.update-resource-description {
+  color: rgba(60, 60, 67, 0.85);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  text-align: justify;
+}
+.update-resource-date-text {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 300;
+}
+.update-resource-user-name-box {
+  display: grid;
+  justify-content: end;
+  position: relative;
+}
+.update-resource-user-name {
+  color: #0a2d4c;
+  font-size: 14px;
+  font-weight: 400;
+}
+.update-resource-date-box {
+  display: grid;
+  place-items: end;
+  right: 50px;
+  bottom: 20px;
+}
+.update-resource-box-container-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.update-resource-box-container-name {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.update-resource-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.change-dialog-box-resource-container
+  > .css-hz1bth-MuiDialog-container
+  > .css-1vn59xe-MuiPaper-root-MuiDialog-paper {
+  max-width: 500px;
+  border-radius: 8px;
+  max-height: 500px;
+}
+.update-resource-drawer-header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.update-resource-drawer-box-container {
+  width: 500px;
+  padding: 36px 20px 40px 40px;
+}
+.update-resource-drawer-box-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.update-resource-description-box {
+  margin-top: 20px;
+}
+.update-resource-button-box {
+  display: grid;
+  justify-content: center;
+  margin: 44px 0px 22px 0px;
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .update-resource-drawer-box-container {
+    width: 330px;
+    padding: 36px 20px 40px 40px;
+    background-color: #fafbff;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  .update-resource-drawer-box-container {
+    width: 370px;
+    padding: 36px 20px 40px 40px;
+    background-color: #fafbff;
+    margin-top: 20px;
+  }
+}
+.send-button-design{
+  background-color:#008CE0;
+  font-size: 12px !important;
+  height: 25px !important;
+  font-weight: 400 !important;
+  padding: 10px 25px !important;
+  
+}
+.next-button-design{
+  background-color:#008CE0 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  height: 30px !important;
+padding: 10px 24px !important;
+}
+.next-disabled-button-design{
+  font-size: 13px !important;
+  height: 30px !important;
+  font-weight: 600 !important;
+  padding: 10px 24px !important;
+}

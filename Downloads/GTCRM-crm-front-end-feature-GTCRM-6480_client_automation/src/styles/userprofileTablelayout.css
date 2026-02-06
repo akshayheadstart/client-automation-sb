@@ -1,0 +1,36 @@
+.user-profile-table-layout-tab{
+    min-height: 0px !important;
+    font-weight: 400 !important;
+    height: 50px;
+    text-transform: capitalize !important;
+    justify-content: flex-start !important;
+    font-size: 15px !important;
+    min-width: 0 !important;
+    color: #092C4C !important;
+    border-radius: 8px 8px 0px 0px;
+}
+.user-profile-table-layout-tab-active{
+    color: #0F476B !important;
+    border-radius: 8px 8px 0px 0px;
+    padding-top: 20px;
+    border-bottom: 1px solid #0F476B !important;
+    padding-right: 20px;
+    font-weight: 700 !important;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset!important; */
+}
+.user-profile-table-layout-tab-box-shadow{
+    background-color: #fff !important;
+    color: #092C4C !important;
+    padding-top: 20px;
+    padding-right: 20px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px!important;
+    font-weight: 400 !important; */
+}
+.user-profile-tabs-box >.css-pmfzgf-MuiTabs-root >.css-69z67c-MuiTabs-scroller >.css-heg063-MuiTabs-flexContainer{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.user-profile-tabs-box >.css-tdn9cd >.css-12qnib >.css-k008qs{
+    display: flex !important;
+    justify-content: space-between !important;
+}

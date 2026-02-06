@@ -1,0 +1,86 @@
+#lead-details-tab-header {
+}
+.lead-details-sub-tabs {
+  padding: 10px 40px 10px 40px !important;
+  text-transform: capitalize !important;
+  min-height: 0 !important;
+  height: 52px !important;
+}
+.lead-details-sub-tabs-active {
+  color: black !important;
+  font-weight: bold !important;
+}
+.lead-details-sub-tabs-icon {
+  font-size: 18px !important;
+}
+.lead-details-button-design {
+  font-size: 12px;
+  font-weight: 400;
+}
+.lead-details-button-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.lead-details-button-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.script-list-dropdown {
+  min-width: 150px;
+  max-width: 200px;
+}
+.lead-details-table-box {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.lead-details-label-cell {
+  font-size: 15px;
+  font-weight: 400 !important;
+  color: #092c4c;
+  white-space: nowrap;
+}
+.lead-details-value-cell {
+  font-size: 15px;
+  font-weight: 600 !important;
+  color: #092c4c;
+  white-space: nowrap;
+}
+.lead-details-secondary-email-text {
+  font-size: 15px;
+  color: #008be2;
+  font-weight: 500;
+  display: none;
+}
+.lead-details-secondary-mobile-text {
+  font-size: 15px;
+  color: #008be2;
+  font-weight: 500;
+  display: none;
+}
+.lead-details-email-text-hover {
+  width: 300px;
+}
+
+.lead-details-email-text-hover:hover .lead-details-secondary-email-text {
+  display: block;
+  cursor: pointer;
+}
+.lead-details-mobile-text-hover:hover .lead-details-secondary-mobile-text {
+  display: block;
+  cursor: pointer;
+}
+.lead-details-table-design-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1.5rem 3rem 1rem 3rem;
+}
